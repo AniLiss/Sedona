@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Отели</title>
+</head>
+<body>
+
+<header>
+    <div class="container clearfix">
+        <nav class="mainNavigation">
+            <ul>
+                <li>
+                    <a href="#">Информация</a>
+                </li>
+                <li>
+                    <a href="#">Фото и видео</a>
+                </li>
+                <li class="logoMenu">
+                    <a href="#"><img src="img/cityOfSedona.jpg"></a>
+                </li>
+                <li>
+                    <a href="#">Карта сайта</a>
+                </li>
+                <li>
+                    <a href="#">Гостиницы</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="filter">
+
+        <img src="img/backgroung.jpg" width="" height="">
+
+        <form class="infrastructureFilter" action="/echo" method="post">
+            <h2 class="caption">Инфраструктура</h2>
+            <label>
+                <input type="checkbox" name="pool" checked>Бассейн
+            </label>
+            <label>
+                <input type="checkbox" name="parkingLot">Парковка
+            </label>
+            <label>
+                <input type="checkbox" name="wiFi">Wi-Fi
+            </label>
+        </form>
+
+        <form class="habitationFilter" action="/echo" method="post">
+            <h2 class="caption">Тип жилья</h2>
+            <label class="description">
+                <input type="checkbox" name="hotel" checked>Гостиница
+            </label>
+            <label class="description">
+                <input type="checkbox" name="motel" checked>Мотель
+            </label>
+            <label class="description">
+                <input type="checkbox" name="apartment" checked>Апартаменты
+            </label>
+        </form>
+
+        <form class="priceFilter" action="/echo" method="post">
+            <h2 class="caption">Стоимость в сутки(р):</h2>
+
+            <div class="priceFilterFrame">
+                <label>От<input type="text" name="from" placeholder="0"></label>
+                <img src="img/delimiter.png" width="" height="">
+                <label>До<input type="text" name="till" placeholder="0"></label>
+            </div>
+        </form>
+        <div class="priceFilterScrollBox">
+            <button class="roundButton"></button>
+            <img src="img/whiteLine.png" name="whiteLine" width="" height="">
+            <img src="img/whiteLine.png" name="whiteLine" width="" height="">
+            <button class="roundButton"></button>
+        </div>
+
+        <button type="submit" name="show" class="btn description">Показать</button>
+
+    </div>
+
+</header>
+
+<div class="container">
+
+    <div class="searchNaigation">
+        <div class="hasFound">Найдено:<span>3</span></div>
+        <div class="sort">Сортировка:
+            <a href="#" class="byPrice">по цене</a>
+
+            <a href="#" class="byType">по типу</a>
+
+            <a href="#" class="byRating">по рейтингу</a>
+        </div>
+        <div class="upDown">
+            <a class="up" href="#">▲</a>
+            <a class="down" href="#">▼</a>
+        </div>
+
+        <div class="searchedResults">
+
+            <div class="separateLine">
+                <img src="img/separateLine.png" width="" height="">
+            </div>
+
+            <div class="result">
+                <img src="img/amaraResolt&Spa.jpg" width="" height="">
+
+                <article class="searchedHabitation">
+                    <h1>Amara Resolt & Spa</h1>
+
+                    <div class="fittedHabitation description">
+                        Гостиница
+                        <a href="#" name="extraInf">Подробнее</a>
+                    </div>
+                    <div class="fittedPrice">
+                        От <span>3500</span>р.
+                        <a href="#" name="book">Забронировать</a>
+                    </div>
+                </article>
+
+                <div class="rating">
+                    <div class="stars">★ ★ ★ ★</div>
+                    <div class="scale">Рейтинг:<span>8,5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separateLine">
+                <img src="img/separateLine.png" width="" height="">
+            </div>
+
+            <div class="result">
+                <img src="img/desertQuailInn.jpg" width="" height="">
+
+                <article class="searchedHabitation">
+                    <h1>Desert Quail Inn</h1>
+
+                    <div class="fittedHabitation description">
+                        Мотель
+                        <a href="#" name="extraInf">Подробнее</a>
+                    </div>
+                    <div class="fittedPrice">
+                        От <span>2000</span>р.
+                        <a href="#" name="book">Забронировать</a>
+                    </div>
+                </article>
+
+                <div class="rating">
+                    <div class="stars">★ ★</div>
+                    <div class="scale">Рейтинг:<span>8,9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separateLine">
+                <img src="img/separateLine.png" width="" height="">
+            </div>
+
+            <div class="result">
+                <img src="img/villasAtPocoDiablo.jpg" width="" height="">
+
+                <article class="searchedHabitation">
+                    <h1>Villas At Poco Diablo</h1>
+
+                    <div class="fittedHabitation description">
+                        Аппартаменты
+                        <a href="#" name="extraInf">Подробнее</a>
+                    </div>
+                    <div class="fittedPrice">
+                        От <span>4000</span>р.
+                        <a href="#" name="book">Забронировать</a>
+                    </div>
+                </article>
+
+                <div class="rating">
+                    <div class="stars">★ ★ ★</div>
+                    <div class="scale">Рейтинг:<span>9,2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="separateLine">
+                <img src="img/separateLine.png" width="" height="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container clearfix">
+        <a class="visitSedona" href="#">#visitsedona</a>
+
+        <div class="footerSocial">
+            <a href="#" class="socialBtn socialBtnVk">Вконтакте</a>
+            <a href="#" class="socialBtn socialBtnFb">Фейсбук</a>
+            <a href="#" class="socialBtn socialBtnInst">Инстаграм</a>
+        </div>
+        <div class="footerCopyright">
+            <p>Website by</p>
+            <img src="img/htmlAcademy.png" width="" height="">
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
