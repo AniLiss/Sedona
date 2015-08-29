@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Отели</title>
 </head>
-<body>
 
+<body>
 <header>
     <div class="container clearfix">
         <nav class="mainNavigation">
@@ -17,7 +18,7 @@
                     <a href="#">Фото и видео</a>
                 </li>
                 <li class="logoMenu">
-                    <a href="#"><img src="img/cityOfSedona.jpg"></a>
+                    <a href="#"><img src="img/iconCityOfSedonaLogo.jpg"></a>
                 </li>
                 <li>
                     <a href="#">Карта сайта</a>
@@ -30,53 +31,60 @@
     </div>
 
     <div class="filter">
+        <img src="img/hotels/bgMain.png" width="" height="">
 
-        <img src="img/backgroung.jpg" width="" height="">
+        <form action="/echo" method="post">
 
-        <form class="infrastructureFilter" action="/echo" method="post">
-            <h2 class="caption">Инфраструктура</h2>
-            <label>
-                <input type="checkbox" name="pool" checked>Бассейн
-            </label>
-            <label>
-                <input type="checkbox" name="parkingLot">Парковка
-            </label>
-            <label>
-                <input type="checkbox" name="wiFi">Wi-Fi
-            </label>
-        </form>
-
-        <form class="habitationFilter" action="/echo" method="post">
-            <h2 class="caption">Тип жилья</h2>
-            <label class="description">
-                <input type="checkbox" name="hotel" checked>Гостиница
-            </label>
-            <label class="description">
-                <input type="checkbox" name="motel" checked>Мотель
-            </label>
-            <label class="description">
-                <input type="checkbox" name="apartment" checked>Апартаменты
-            </label>
-        </form>
-
-        <form class="priceFilter" action="/echo" method="post">
-            <h2 class="caption">Стоимость в сутки(р):</h2>
-
-            <div class="priceFilterFrame">
-                <label>От<input type="text" name="from" placeholder="0"></label>
-                <img src="img/delimiter.png" width="" height="">
-                <label>До<input type="text" name="till" placeholder="0"></label>
+            <div class="infrastructureFilter">
+                <h2 class="caption">Инфраструктура</h2>
+                <label>
+                    <input type="checkbox" name="pool" checked>Бассейн
+                </label>
+                <label>
+                    <input type="checkbox" name="parkingLot">Парковка
+                </label>
+                <label>
+                    <input type="checkbox" name="wiFi">Wi-Fi
+                </label>
             </div>
+
+            <div class="habitationFilter">
+                <h2 class="caption">Тип жилья</h2>
+                <label>
+                    <input type="checkbox" name="hotel" checked>Гостиница
+                </label>
+                <label>
+                    <input type="checkbox" name="motel" checked>Мотель
+                </label>
+                <label>
+                    <input type="checkbox" name="apartment" checked>Апартаменты
+                </label>
+            </div>
+
+            <div class="priceFilter">
+                <h2 class="caption">Стоимость в сутки(р):</h2>
+
+                <div class="priceFilterFrame">
+                    <label>От<input type="text" name="from" placeholder="0"></label>
+                    <span class="delimiter"></span>
+                    <label>До<input type="text" name="till" placeholder="0"></label>
+                </div>
+            </div>
+
+            <div class="priceFilterScrollBox">
+                <button class="roundButton">
+                    <img src="img/hotels/btnRound.png">
+                </button>
+                <span class="/whiteLine.png"></span>
+                <span class="/greyLine.png"></span>
+                <button class="roundButtonActive">
+                    <img src="img/hotels/btnRoundActive.png">
+                </button>
+            </div>
+
+            <button type="submit" name="show" class="btn">Показать</button>
+
         </form>
-        <div class="priceFilterScrollBox">
-            <button class="roundButton"></button>
-            <img src="img/whiteLine.png" name="whiteLine" width="" height="">
-            <img src="img/whiteLine.png" name="whiteLine" width="" height="">
-            <button class="roundButton"></button>
-        </div>
-
-        <button type="submit" name="show" class="btn description">Показать</button>
-
     </div>
 
 </header>
@@ -84,8 +92,9 @@
 <div class="container">
 
     <div class="searchNaigation">
-        <div class="hasFound">Найдено:<span>3</span></div>
-        <div class="sort">Сортировка:
+        <div class="hasFound caption">Найдено:<span>3</span></div>
+        <div class="sort">
+            <span class="sortedBy">Сортировка:</span>
             <a href="#" class="byPrice">по цене</a>
 
             <a href="#" class="byType">по типу</a>
@@ -99,23 +108,20 @@
 
         <div class="searchedResults">
 
-            <div class="separateLine">
-                <img src="img/separateLine.png" width="" height="">
-            </div>
-
-            <div class="result">
-                <img src="img/amaraResolt&Spa.jpg" width="" height="">
+            <!-- hr -->
+            <div class="item">
+                <img src="img/hotels/picAmaraResolt&Spa.jpg" width="" height="">
 
                 <article class="searchedHabitation">
                     <h1>Amara Resolt & Spa</h1>
 
                     <div class="fittedHabitation description">
                         Гостиница
-                        <a href="#" name="extraInf">Подробнее</a>
+                        <a href="#" name="extraInf" class="bnt">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         От <span>3500</span>р.
-                        <a href="#" name="book">Забронировать</a>
+                        <a href="#" name="book" class="bnt">Забронировать</a>
                     </div>
                 </article>
 
@@ -126,23 +132,21 @@
                 </div>
             </div>
 
-            <div class="separateLine">
-                <img src="img/separateLine.png" width="" height="">
-            </div>
+            <!-- hr -->
 
-            <div class="result">
-                <img src="img/desertQuailInn.jpg" width="" height="">
+            <div class="item">
+                <img src="img/hotels/picDesertQuailInn.jpg" width="" height="">
 
                 <article class="searchedHabitation">
                     <h1>Desert Quail Inn</h1>
 
                     <div class="fittedHabitation description">
                         Мотель
-                        <a href="#" name="extraInf">Подробнее</a>
+                        <a href="#" name="extraInf" class="bnt">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         От <span>2000</span>р.
-                        <a href="#" name="book">Забронировать</a>
+                        <a href="#" name="book" class="bnt">Забронировать</a>
                     </div>
                 </article>
 
@@ -153,23 +157,21 @@
                 </div>
             </div>
 
-            <div class="separateLine">
-                <img src="img/separateLine.png" width="" height="">
-            </div>
+            <!-- hr -->
 
-            <div class="result">
-                <img src="img/villasAtPocoDiablo.jpg" width="" height="">
+            <div class="item">
+                <img src="img/hotels/picVillasAtPocoDiablo.jpg" width="" height="">
 
                 <article class="searchedHabitation">
                     <h1>Villas At Poco Diablo</h1>
 
                     <div class="fittedHabitation description">
                         Аппартаменты
-                        <a href="#" name="extraInf">Подробнее</a>
+                        <a href="#" name="extraInf" class="bnt">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         От <span>4000</span>р.
-                        <a href="#" name="book">Забронировать</a>
+                        <a href="#" name="book" class="bnt">Забронировать</a>
                     </div>
                 </article>
 
@@ -180,9 +182,7 @@
                 </div>
             </div>
 
-            <div class="separateLine">
-                <img src="img/separateLine.png" width="" height="">
-            </div>
+            <!-- hr -->
         </div>
     </div>
 </div>
@@ -198,7 +198,7 @@
         </div>
         <div class="footerCopyright">
             <p>Website by</p>
-            <img src="img/htmlAcademy.png" width="" height="">
+            <img src="img/iconHtmlAcademyBlack.png" width="" height="">
         </div>
     </div>
 </footer>

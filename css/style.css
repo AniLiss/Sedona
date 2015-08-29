@@ -1,0 +1,87 @@
+/*For index.html mainly */
+.body {
+    font-size: 14px;
+    color: #333333;
+    font-family: "PT Sans Regular";
+}
+
+.mainNavigation {
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Bold";
+}
+
+.caption {
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Bold";
+}
+
+.photoRibbon {
+    color: #ffffff;
+}
+
+.interestedRibbon p {
+    line-height: 24px;
+}
+
+.interestedRibbon span {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Bold";
+}
+
+.form .caption {
+    font-size: 14px;
+}
+
+.btn .caption {
+    color: #ffffff;
+}
+
+.caption .h2 {
+    color: #ffffff;
+}
+
+/*For hotels.html*/
+.filter {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "PT Sans Regular";
+}
+
+.filter .caption {
+    font-size: 16px;
+}
+
+.sort {
+    font-size: 12px;
+}
+
+.sortedBy {
+    color: #000000;
+}
+
+.byPrice, .down {
+    color: #81b3d2;
+}
+
+.stars {
+    color: #81b3d2
+}
+
+h1 {
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Bold";
+}
+
+.btn {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "PT Sans Bold";
+}

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
 </head>
-<body>
 
+<body>
 <header>
     <div class="container clearfix">
         <nav class="mainNavigation">
@@ -17,7 +18,7 @@
                     <a href="#">Фото и видео</a>
                 </li>
                 <li class="logoMenu">
-                    <a href="#"><img src="img/cityOfSedona.jpg"></a>
+                    <a href="#"><img src="img/iconCityOfSedonaLogo.jpg"></a>
                 </li>
                 <li>
                     <a href="#">Карта сайта</a>
@@ -33,37 +34,30 @@
 <div class="container">
 
     <div class="welcomeToSedona">
-        <img src="img/backgroundSedona.jpg" width="" height="" alt="Welcome to the gorgeous Sedona">
-        <img src="img/welcome.png" width="" height="">
-        <img src="img/gorgeous.png" width="" height="">
-        <img src="img/hyphenGorgeous.png" width="" height="">
-        <img src="img/labelSedona.png" width="" height="">
-        <img src="img/because.png" width="" height="">
-        <img src="img/layer14.png" width="" height="">
-        <img src="img/shapeOfLayer14.png" width="" height="">
-
+        <img src="img/bgSedonaMainPic.jpg" width="" height="" alt="Welcome to the gorgeous Sedona">
+        <img src="img/iconMainLabelWelcomeSedonaGorgeous.png" width="" height="">
         <section class="definition">
-            <h2 class="caption">Седона — небольшой городок в Аризоне,<br>
-                заслуживающий большего!</h2>
+            <h2 class="caption">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
 
             <p class="description">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
         </section>
     </div>
 
-    <div class="photoRibbon">
+    <div class="photoRibbon photoRibbonUp">
         <section class="advantages">
+            <img src="img/picTrueCity_800_256.jpg" width="" height="">
+
             <h2 class="caption">Настоящий городок</h2>
 
             <p class="description">— №1 —</p>
 
-            <p class="description">Седона не аттракцион<br> для туристов, там<br> течет своя жизнь</p>
+            <p class="description">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </section>
-        <img src="img/trueCity.jpg" width="" height="">
     </div>
 
     <div class="advantagePicsRibbon">
-        <figure class="house">
-            <img src="img/house.png" width="" height="">
+        <figure>
+            <img src="img/spriteHouseFoodSouvenire.png" width="" height="">
             <section class="advantages">
                 <h2 class="caption">Жилье</h2>
 
@@ -71,8 +65,8 @@
             </section>
         </figure>
 
-        <figure class="food">
-            <img src="img/food.png" width="" height="">
+        <figure>
+            <img src="img/spriteHouseFoodSouvenire.png" width="" height="">
             <section class="advantages">
                 <h2 class="caption">Еда</h2>
 
@@ -80,8 +74,8 @@
             </section>
         </figure>
 
-        <figure class="souvenir">
-            <img src="img/souvenir.png" width="" height="">
+        <figure>
+            <img src="img/spriteHouseFoodSouvenire.png" width="" height="">
             <section class="advantages">
                 <h2 class="caption">Сувениры</h2>
 
@@ -90,8 +84,8 @@
         </figure>
     </div>
 
-    <div class="photoRibbon">
-        <img src="img/devilBridge.jpg" width="" height="">
+    <div class="photoRibbon photoRibbonDown">
+        <img src="img/picDevilBridge_800_256.jpg" width="" height="">
         <section class="advantages">
             <h2 class="caption">Там есть мост дьявола</h2>
 
@@ -102,6 +96,7 @@
     </div>
 
     <div class="advantageRibbon">
+
         <section class="advantages smallSquare">
             <h2 class="caption">Там есть мост дьявола</h2>
 
@@ -109,6 +104,7 @@
 
             <p class="description">Все достопримеча-<br>тельности наодятся очень близко</p>
         </section>
+
         <section class="advantages beautifulRoad">
             <h2 class="caption">Красивая дорога</h2>
 
@@ -116,7 +112,8 @@
 
             <p class="description">Еать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
         </section>
-        <section class="noTourists">
+
+        <section class="fewTourists">
             <h2 class="caption">Мало туристов</h2>
 
             <p class="description">— №5 —</p>
@@ -125,43 +122,44 @@
         </section>
     </div>
 
-    <section class="interested">
-        Заинтересовались?
+    <section class="interestedRibbon">
+        <span>Заинтересовались?</span>
+
         <p>Укажите предполагаемые даты поездки<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </section>
 
-    <div class="form">
-        <h2 class="caption">Поиск гостиницы в Седоне</h2>
+    <div class="form caption">
+        <h2><a href="#">Поиск гостиницы в Седоне</a></h2>
 
         <form action="/echo" method="post">
 
-            <div class="formContent">
-                <div class="formLine">
-                    <label>Дата заезда:
-                        <input type="text" name="arrivalDay"></label>
-                    <img src="img/calendar.png" width="" height="">
-                </div>
-                <div class="formLine">
-                    <label>Дата выезда:
-                        <input type="text" name="arrivalDay">
-                        <img src="img/calendar.png" width="" height=""></label>
-                </div>
-                <div class="formLine">
-                    <label>Взрослые:
-                        <img src="img/minus.png" width="" height="">
-                        <input type="text" name="amount">
-                        <img src="img/plus.png" width="" height=""></label>
-
-                    <label>Дети:
-                        <img src="img/minus.png" width="" height="">
-                        <input type="text" name="amount">
-                        <img src="img/plus.png" width="" height=""></label>
-                </div>
-
-                <button class="btn" type="submit">Найти</button>
+            <div class="formLine">
+                <label>Дата заезда:
+                    <input type="text" name="arrivalDay">
+                    <img src="img/calendar.png" width="" height=""></label> <!--It should be icon font-->
 
             </div>
+
+            <div class="formLine">
+                <label>Дата выезда:
+                    <input type="text" name="arrivalDay">
+                    <img src="img/calendar.png" width="" height=""></label> <!--It should be icon font-->
+            </div>
+
+            <div class="formLine">
+                <label>Взрослые:
+                    <img src="img/minus.png" width="" height=""> <!--It should be icon font-->
+                    <input type="text" name="amount">
+                    <img src="img/plus.png" width="" height=""></label> <!--It should be icon font-->
+
+                <label>Дети:
+                    <img src="img/minus.png" width="" height=""> <!--It should be icon font-->
+                    <input type="text" name="amount">
+                    <img src="img/plus.png" width="" height=""></label> <!--It should be icon font-->
+            </div>
+
+            <button class="btn caption" type="submit">Найти</button>
         </form>
     </div>
 
@@ -170,18 +168,21 @@
     </div>
 
 </div>
+
 <footer>
     <div class="container clearfix">
-        <a class="visitSedona" href="#">#visitsedona</a>
+        <div class="visitSedona">
+            <a class="caption" href="#">#visitsedona</a>
+        </div>
 
         <div class="footerSocial">
-            <a href="#" class="socialBtn socialBtnVk">Вконтакте</a>
-            <a href="#" class="socialBtn socialBtnFb">Фейсбук</a>
-            <a href="#" class="socialBtn socialBtnInst">Инстаграм</a>
+            <a href="#" class="socialBtn socialBtnVk">Вконтакте</a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnFb">Фейсбук</a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnInst">Инстаграм</a> <!--It should be icon font-->
         </div>
         <div class="footerCopyright">
             <p>Website by</p>
-            <img src="img/htmlAcademy.png" width="" height="">
+            <img src="img/iconHtmlAcademyBlack.png" width="" height="">
         </div>
     </div>
 </footer>
