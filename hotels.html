@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Отели</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
 <header>
     <div class="container clearfix">
         <nav class="mainNavigation">
@@ -36,7 +38,7 @@
         <form action="/echo" method="post">
 
             <div class="infrastructureFilter">
-                <h2 class="caption">Инфраструктура</h2>
+                <h3 class="searchCriteria">Инфраструктура</h3>
                 <label>
                     <input type="checkbox" name="pool" checked>Бассейн
                 </label>
@@ -49,7 +51,7 @@
             </div>
 
             <div class="habitationFilter">
-                <h2 class="caption">Тип жилья</h2>
+                <h3 class="searchCriteria">Тип жилья</h3>
                 <label>
                     <input type="checkbox" name="hotel" checked>Гостиница
                 </label>
@@ -62,7 +64,7 @@
             </div>
 
             <div class="priceFilter">
-                <h2 class="caption">Стоимость в сутки(р):</h2>
+                <h3 class="searchCriteria">Стоимость в сутки(р):</h3>
 
                 <div class="priceFilterFrame">
                     <label>От<input type="text" name="from" placeholder="0"></label>
@@ -72,17 +74,23 @@
             </div>
 
             <div class="priceFilterScrollBox">
+                <span class="/greyLine.png"></span>
+
                 <button class="roundButton">
                     <img src="img/hotels/btnRound.png">
                 </button>
+
                 <span class="/whiteLine.png"></span>
-                <span class="/greyLine.png"></span>
+
                 <button class="roundButtonActive">
                     <img src="img/hotels/btnRoundActive.png">
                 </button>
+
+                <span class="/greyLine.png"></span>
+
             </div>
 
-            <button type="submit" name="show" class="btn">Показать</button>
+            <button type="submit" name="show">Показать</button>
 
         </form>
     </div>
@@ -94,12 +102,12 @@
     <div class="searchNaigation">
         <div class="hasFound caption">Найдено:<span>3</span></div>
         <div class="sort">
-            <span class="sortedBy">Сортировка:</span>
-            <a href="#" class="byPrice">по цене</a>
+            <span>Сортировка:</span>
+            <a href="#" class="active">по цене</a>
 
-            <a href="#" class="byType">по типу</a>
+            <a href="#">по типу</a>
 
-            <a href="#" class="byRating">по рейтингу</a>
+            <a href="#">по рейтингу</a>
         </div>
         <div class="upDown">
             <a class="up" href="#">▲</a>
@@ -113,15 +121,15 @@
                 <img src="img/hotels/picAmaraResolt&Spa.jpg" width="" height="">
 
                 <article class="searchedHabitation">
-                    <h1>Amara Resolt & Spa</h1>
+                    <h2 class="caption">Amara Resolt & Spa</h2>
 
-                    <div class="fittedHabitation description">
+                    <div class="fittedHabitation">
                         Гостиница
-                        <a href="#" name="extraInf" class="bnt">Подробнее</a>
+                        <a href="#" name="extraInf" class="btn">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         От <span>3500</span>р.
-                        <a href="#" name="book" class="bnt">Забронировать</a>
+                        <a href="#" name="book" class="btn">Забронировать</a>
                     </div>
                 </article>
 
@@ -138,15 +146,15 @@
                 <img src="img/hotels/picDesertQuailInn.jpg" width="" height="">
 
                 <article class="searchedHabitation">
-                    <h1>Desert Quail Inn</h1>
+                    <h2 class="caption">Desert Quail Inn</h2>
 
-                    <div class="fittedHabitation description">
+                    <div class="fittedHabitation">
                         Мотель
-                        <a href="#" name="extraInf" class="bnt">Подробнее</a>
+                        <a href="#" name="extraInf" class="btn">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         От <span>2000</span>р.
-                        <a href="#" name="book" class="bnt">Забронировать</a>
+                        <a href="#" name="book" class="btn">Забронировать</a>
                     </div>
                 </article>
 
@@ -163,15 +171,15 @@
                 <img src="img/hotels/picVillasAtPocoDiablo.jpg" width="" height="">
 
                 <article class="searchedHabitation">
-                    <h1>Villas At Poco Diablo</h1>
+                    <h2 class="caption">Villas At Poco Diablo</h2>
 
-                    <div class="fittedHabitation description">
+                    <div class="fittedHabitation">
                         Аппартаменты
-                        <a href="#" name="extraInf" class="bnt">Подробнее</a>
+                        <a href="#" name="extraInf" class="btn">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         От <span>4000</span>р.
-                        <a href="#" name="book" class="bnt">Забронировать</a>
+                        <a href="#" name="book" class="btn">Забронировать</a>
                     </div>
                 </article>
 
