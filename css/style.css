@@ -87,3 +87,298 @@ body {
     font-weight: bold;
     font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
 }
+
+/*======================================
+ positioning elements index
+=======================================*/
+.cleafix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 5px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logoMenu {
+    margin: 0 auto; /*почему не срабатывает посередине?*/
+}
+
+.mainNavigation, .searchNavigation {
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.logoMenu {
+    position: relative;
+    left: 45%
+}
+
+.welcomeToSedona img:nth-child(2) {
+    position: relative;
+    left: 30%;
+}
+
+.definition {
+    padding-top: 61px;
+    margin: 0 auto;
+    width: 487px;
+    text-align: center;
+}
+
+.photoRibbon, .advantageRibbon {
+    min-height: 256px;
+}
+
+.photoRibbonRight {
+    margin-top: 56px;
+}
+
+.photoRibbonRight img {
+    float: right;
+}
+
+.photoRibbon .advantages {
+    width: 400px;
+}
+
+.photoRibbonRight .advantages {
+    float: left;
+    text-align: center;
+    padding-top: 53px;
+}
+
+.advantagePicsRibbon figure {
+    width: 268px;
+    float: left;
+}
+
+.advantagePicsRibbon figure:nth-child(1) {
+    margin-right: 125px;
+}
+
+.advantagePicsRibbon figure:nth-child(2) {
+    margin-right: 107px;
+}
+
+.photoRibbonLeft {
+    margin-top: 85px;
+}
+
+.photoRibbonLeft img {
+    float: left;
+}
+
+.photoRibbonLeft .advantages {
+    float: right;
+    padding-top: 58px;
+    text-align: center;
+}
+
+.advantageRibbon {
+    margin-left: 70px;
+}
+
+.advantageRibbon .advantages {
+    float: left;
+    width: 262px;
+    margin-right: 137px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.advantageRibbon .fewTourists {
+    margin-right: 0;
+}
+
+.interestedRibbon {
+    padding-top: 57px;
+    width: 434px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form {
+    width: 568px;
+    margin: 0 auto;
+
+}
+
+.form h2 {
+    padding-top: 35px;
+    text-align: center;
+    padding-bottom: 33px;
+}
+
+.form .formLine {
+    hight: 38px;
+    margin-left: 54px;
+    margin-right: 51px;
+
+}
+
+.form button {
+    height: 58px;
+    margin: 54px 0 55px 55px;
+    width: 458px;
+}
+
+footer .container {
+    padding-left: 132px;
+}
+
+.visitSedona {
+    width: 136px;
+    float: left;
+    margin-right: 256px;
+    margin-top: 51px;
+}
+
+.footerSocial {
+    width: 151px;
+    float: left;
+    margin-right: 227px;
+    margin-top: 36px;
+}
+
+.footerCopyright {
+    width: 195px;
+    float: left;
+}
+
+.footerCopyright img {
+    margin-top: 41px;
+}
+
+.footerCopyright span {
+    margin-top: 54px;
+}
+
+/*======================================
+ positioning elements hotels
+=======================================*/
+.filter form {
+    margin-left: 72px;
+}
+
+.infrastructureFilter {
+    width: 139px;
+    float: left;
+    margin-right: 115px;
+}
+
+.habitationFilter {
+    width: 136px; /*почему, если задать min-width область становистя широкой?*/
+    float: left;
+    margin-right: 354px;
+}
+
+.priceFilter {
+    width: 328px;
+    float: left;
+}
+
+.priceFilterFrame, .priceFilterScrollBox {
+    width: 318px;
+    float: right;
+}
+
+.filter button:last-child {
+    width: 137px;
+    float: right;
+    margin-right: 168px;
+    margin-top: 23px;
+    margin-bottom: 33px;
+}
+
+.hasFound {
+    width: 115px;
+    margin-right: 49px;
+    float: left;
+}
+
+.sort {
+    width: 353px;
+    float: left;
+}
+
+.upDown {
+    width: 36px;
+    float: right;
+}
+
+.searchedItems {
+    padding-top: 31px;
+    padding-bottom: 33px;
+}
+
+.rating {
+    float: right;
+}
+
+.scale {
+    margin-top: 47px;
+    width: 110px;
+    height: 27px;
+}
+
+.item {
+    padding: 30px 0;
+}
+
+.item img {
+    display: inline-block;
+    margin-right: 30px;
+    width: 165px;
+}
+
+.searchedHabitation {
+    display: inline-block;
+    width: 258px;
+    vertical-align: top;
+}
+
+.fittedHabitation {
+    float: left;
+    margin-right: 6px;
+}
+
+.fittedHabitation .btn {
+    width: 110px;
+}
+
+.fittedPrice .btn {
+    width: 142px;
+}
+
+.gl0 {
+    outline: solid;
+    outline-color: aqua;
+}
+
+.gl1 {
+    outline: solid;
+    outline-color: red;
+}
+
+.gl2 {
+    outline: solid;
+    outline-color: green;
+}
+
+.gl3 {
+    outline: solid;
+    outline-color: yellow;
+}

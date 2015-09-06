@@ -9,18 +9,16 @@
 
 <body>
 
-<header>
-    <div class="container clearfix">
-        <nav class="mainNavigation">
+<header class="gl0">
+    <div class="container clearfix gl1">
+        <nav class="mainNavigation gl2">
+            <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.jpg"></a>
             <ul>
                 <li>
                     <a href="#">Информация</a>
                 </li>
                 <li>
                     <a href="#">Фото и видео</a>
-                </li>
-                <li class="logoMenu">
-                    <a href="#"><img src="img/iconCityOfSedonaLogo.jpg"></a>
                 </li>
                 <li>
                     <a href="#">Карта сайта</a>
@@ -30,106 +28,118 @@
                 </li>
             </ul>
         </nav>
-    </div>
 
-    <div class="filter">
-        <img src="img/hotels/bgMain.png" width="" height="">
 
-        <form action="/echo" method="post">
+        <div class="filter  cleafix gl1">
+            <img src="img/hotels/bgMain.png" width="" height="">
 
-            <div class="infrastructureFilter">
-                <h3 class="searchCriteria">Инфраструктура</h3>
-                <label>
-                    <input type="checkbox" name="pool" checked>Бассейн
-                </label>
-                <label>
-                    <input type="checkbox" name="parkingLot">Парковка
-                </label>
-                <label>
-                    <input type="checkbox" name="wiFi">Wi-Fi
-                </label>
-            </div>
+            <form class="gl2" action="/echo" method="post">
 
-            <div class="habitationFilter">
-                <h3 class="searchCriteria">Тип жилья</h3>
-                <label>
-                    <input type="checkbox" name="hotel" checked>Гостиница
-                </label>
-                <label>
-                    <input type="checkbox" name="motel" checked>Мотель
-                </label>
-                <label>
-                    <input type="checkbox" name="apartment" checked>Апартаменты
-                </label>
-            </div>
-
-            <div class="priceFilter">
-                <h3 class="searchCriteria">Стоимость в сутки(р):</h3>
-
-                <div class="priceFilterFrame">
-                    <label>От<input type="text" name="from" placeholder="0"></label>
-                    <span class="delimiter"></span>
-                    <label>До<input type="text" name="till" placeholder="0"></label>
+                <div class="infrastructureFilter gl2">
+                    <h3 class="searchCriteria">Инфраструктура</h3>
+                    <label>
+                        <input type="checkbox" name="pool" checked>Бассейн
+                    </label>
+                    <label>
+                        <input type="checkbox" name="parkingLot">Парковка
+                    </label>
+                    <label>
+                        <input type="checkbox" name="wiFi">Wi-Fi
+                    </label>
                 </div>
-            </div>
 
-            <div class="priceFilterScrollBox">
-                <span class="/greyLine.png"></span>
+                <div class="habitationFilter gl3">
+                    <h3 class="searchCriteria">Тип жилья</h3>
+                    <label>
+                        <input type="checkbox" name="hotel" checked>Гостиница
+                    </label>
+                    <label>
+                        <input type="checkbox" name="motel" checked>Мотель
+                    </label>
+                    <label>
+                        <input type="checkbox" name="apartment" checked>Апартаменты
+                    </label>
+                </div>
 
-                <button class="roundButton">
-                    <img src="img/hotels/btnRound.png">
-                </button>
+                <div class="priceFilter gl0">
+                    <h3 class="searchCriteria">Стоимость в сутки(р):</h3>
 
-                <span class="/whiteLine.png"></span>
+                    <div class="priceFilterFrame">
+                        <label>От<input type="text" name="from" placeholder="0"></label>
+                        <span class="delimiter"></span>
+                        <label>До<input type="text" name="till" placeholder="0"></label>
+                    </div>
 
-                <button class="roundButtonActive">
-                    <img src="img/hotels/btnRoundActive.png">
-                </button>
 
-                <span class="/greyLine.png"></span>
+                    <div class="priceFilterScrollBox gl1">
+                        <span class="/greyLine.png"></span>
 
-            </div>
+                        <button class="roundButton">
+                            <img src="img/hotels/btnRound.png">
+                        </button>
 
-            <button type="submit" name="show">Показать</button>
+                        <span class="/whiteLine.png"></span>
 
-        </form>
+                        <button class="roundButtonActive">
+                            <img src="img/hotels/btnRound.png">
+                        </button>
+
+                        <span class="/greyLine.png"></span>
+
+                    </div>
+                </div>
+
+                <button type="submit" name="show">Показать</button>
+
+            </form>
+        </div>
     </div>
-
 </header>
 
-<div class="container">
+<div class="container gl1">
 
-    <div class="searchNaigation">
-        <div class="hasFound caption">Найдено:<span>3</span></div>
-        <div class="sort">
-            <span>Сортировка:</span>
-            <a href="#" class="active">по цене</a>
+    <div class="searchNavigation cleafix gl2">
 
-            <a href="#">по типу</a>
+        <div class="searchedItems cleafix">
+            <div class="hasFound caption gl3">
+                Найдено:<span>3</span>
+            </div>
 
-            <a href="#">по рейтингу</a>
+            <div class="sort gl2">
+                <span>Сортировка:</span>
+                <a href="#" class="active">по цене</a>
+
+                <a href="#">по типу</a>
+
+                <a href="#">по рейтингу</a>
+            </div>
+
+            <div class="upDown gl0">
+                <a class="up" href="#">▲</a>
+                <a class="down" href="#">▼</a>
+            </div>
         </div>
-        <div class="upDown">
-            <a class="up" href="#">▲</a>
-            <a class="down" href="#">▼</a>
-        </div>
 
-        <div class="searchedResults">
+        <div class="searchedResults cleafix">
 
             <!-- hr -->
-            <div class="item">
+            <div class="item gl2">
                 <img src="img/hotels/picAmaraResolt&Spa.jpg" width="" height="">
 
-                <article class="searchedHabitation">
+                <article class="searchedHabitation gl0">
                     <h2 class="caption">Amara Resolt & Spa</h2>
 
                     <div class="fittedHabitation">
                         Гостиница
-                        <a href="#" name="extraInf" class="btn">Подробнее</a>
+                        <div>
+                            <a href="#" name="extraInf" class="btn">Подробнее</a>
+                        </div>
                     </div>
                     <div class="fittedPrice">
                         От <span>3500</span>р.
-                        <a href="#" name="book" class="btn">Забронировать</a>
+                        <div>
+                            <a href="#" name="book" class="btn">Забронировать</a>
+                        </div>
                     </div>
                 </article>
 
@@ -138,23 +148,28 @@
                     <div class="scale">Рейтинг:<span>8,5</span>
                     </div>
                 </div>
+
             </div>
 
             <!-- hr -->
 
-            <div class="item">
+            <div class="item gl2">
                 <img src="img/hotels/picDesertQuailInn.jpg" width="" height="">
 
-                <article class="searchedHabitation">
+                <article class="searchedHabitation gl0">
                     <h2 class="caption">Desert Quail Inn</h2>
 
                     <div class="fittedHabitation">
                         Мотель
-                        <a href="#" name="extraInf" class="btn">Подробнее</a>
+                        <div>
+                            <a href="#" name="extraInf" class="btn">Подробнее</a>
+                        </div>
                     </div>
                     <div class="fittedPrice">
                         От <span>2000</span>р.
-                        <a href="#" name="book" class="btn">Забронировать</a>
+                        <div>
+                            <a href="#" name="book" class="btn">Забронировать</a>
+                        </div>
                     </div>
                 </article>
 
@@ -167,19 +182,23 @@
 
             <!-- hr -->
 
-            <div class="item">
+            <div class="item gl2">
                 <img src="img/hotels/picVillasAtPocoDiablo.jpg" width="" height="">
 
-                <article class="searchedHabitation">
+                <article class="searchedHabitation gl0">
                     <h2 class="caption">Villas At Poco Diablo</h2>
 
                     <div class="fittedHabitation">
                         Аппартаменты
-                        <a href="#" name="extraInf" class="btn">Подробнее</a>
+                        <div>
+                            <a href="#" name="extraInf" class="btn gl0">Подробнее</a>
+                        </div>
                     </div>
-                    <div class="fittedPrice">
+                    <div class="fittedPrice ">
                         От <span>4000</span>р.
-                        <a href="#" name="book" class="btn">Забронировать</a>
+                        <div>
+                            <a href="#" name="book" class="btn gl0">Забронировать</a>
+                        </div>
                     </div>
                 </article>
 
@@ -205,7 +224,7 @@
             <a href="#" class="socialBtn socialBtnInst">Инстаграм</a>
         </div>
         <div class="footerCopyright">
-            <p>Website by</p>
+            <span>Website by</span>
             <img src="img/iconHtmlAcademyBlack.png" width="" height="">
         </div>
     </div>
