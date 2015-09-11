@@ -4,20 +4,20 @@ body {
     line-height: normal;
     color: #333333;
     font-weight: normal;
-    font-family: "PT Sans Narrow Regular", "Arial Regular", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 .mainNavigation {
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 .caption {
     font-size: 21px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 .photoRibbon {
@@ -32,7 +32,7 @@ body {
     font-size: 30px;
     color: #000000;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 .interestedRibbon p {
@@ -45,7 +45,7 @@ body {
 }
 
 .formLine {
-    font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
     color: #ffffff;
     font-weight: bold;
 }
@@ -62,7 +62,7 @@ body {
 .searchCriteria {
     font-weight: bold;
     font-size: 16px;
-    font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 .sort {
@@ -85,7 +85,7 @@ body {
     font-size: 14px;
     color: #ffffff;
     font-weight: bold;
-    font-family: "PT Sans Narrow Bold", "Arial Bold", sant-serif;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 /*======================================
@@ -104,6 +104,7 @@ body {
 
 header {
     padding: 5px 0;
+    position: relative;
 }
 
 .container {
@@ -111,8 +112,16 @@ header {
     margin: 0 auto;
 }
 
-.logoMenu {
-    margin: 0 auto; /*почему не срабатывает посередине?*/
+header .logoMenu img {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    z-index: 5;
+    /* display: block;
+     margin: 0px auto;
+    */
 }
 
 .mainNavigation, .searchNavigation {
@@ -120,14 +129,65 @@ header {
     margin-right: 72px;
 }
 
-.logoMenu {
+.mainNavigation li {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: inline;
+}
+
+.mainNavigation a {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainNavigation ul {
+    padding: 0;
+}
+
+.mainNavigation li:nth-child(1) {
+    margin-right: 153px;
+}
+
+.mainNavigation li:nth-child(2) {
+    margin-right: 395px;
+}
+
+.mainNavigation li:nth-child(3) {
+    margin-right: 180px;
+}
+
+.welcomeToSedona {
     position: relative;
-    left: 45%
 }
 
 .welcomeToSedona img:nth-child(2) {
-    position: relative;
+    position: absolute;
+    top: 76px;
     left: 30%;
+}
+
+.welcomeToSedona img:nth-child(2) {
+    position: absolute;
+    top: 76px;
+    left: 30%;
+}
+
+.welcomeToSedona img:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.definition h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.definition p {
+    padding: 0;
+    margin: 0;
 }
 
 .definition {
@@ -141,6 +201,15 @@ header {
     min-height: 256px;
 }
 
+.photoRibbon .advantages {
+    background-color: #81b3d2;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    padding-top: 53px;
+    min-height: 203px;
+}
+
 .photoRibbonRight {
     margin-top: 56px;
 }
@@ -149,27 +218,25 @@ header {
     float: right;
 }
 
-.photoRibbon .advantages {
-    width: 400px;
+.advantages .advantagesContent {
+    width: 220px;
+    position: absolute;
+    left: 85px;
+}
+
+.advantagesContent h2 {
+    width: 130px;
+    margin: 0 auto;
+    color: white;
 }
 
 .photoRibbonRight .advantages {
     float: left;
-    text-align: center;
-    padding-top: 53px;
 }
 
-.advantagePicsRibbon figure {
-    width: 268px;
-    float: left;
-}
-
-.advantagePicsRibbon figure:nth-child(1) {
-    margin-right: 125px;
-}
-
-.advantagePicsRibbon figure:nth-child(2) {
-    margin-right: 107px;
+.photoRibbonLeft .advantagesContent {
+    width: 196px;
+    left: 100px;
 }
 
 .photoRibbonLeft {
@@ -184,18 +251,82 @@ header {
     float: right;
     padding-top: 58px;
     text-align: center;
+    min-height: 198px;
 }
 
+.advantagePicsRibbon figure {
+    width: 268px;
+    float: left;
+    text-align: center;
+    position: relative;
+
+}
+
+.advantagePicsRibbon .advantagesPicsRibbonSprite {
+    display: inline-block;
+    width: 75px;
+    height: 76px;
+    background: #bdc3c7;
+    vertical-align: middle;
+    background-image: url("/img/spriteHouseFoodSouvenire.png"); /*почему не загружается изображение*/
+    background-repeat: no-repeat;
+}
+
+.home {
+    /*background-position: ;*/
+}
+
+.food {
+    /*background-position: ;*/
+}
+
+.souvenir {
+    /*background-position: ;*/
+}
+
+figure .advantages {
+    width: 240px;
+    margin: 0 auto;
+}
+
+figure:nth-child(3) .advantages {
+    width: 158px;
+    /*не получается китайского,
+                                     но*/
+}
+
+.advantagePicsRibbon figure:nth-child(1) {
+    margin-right: 125px;
+}
+
+.advantagePicsRibbon figure:nth-child(2) {
+    margin-right: 107px;
+}
+
+/*
+.advantages h2{
+    margin: 0;
+    padding: 0;
+}*/
 .advantageRibbon {
     margin-left: 70px;
+    margin-right: 70px;
 }
 
 .advantageRibbon .advantages {
     float: left;
     width: 262px;
     margin-right: 137px;
-    padding-top: 50px;
+    margin-top: 50px;
     text-align: center;
+}
+
+.advantageRibbon .description {
+    width: 226px;
+    /*ужиманием не получается достигнуть нужных переносов
+                      либо делать два <p>, либо <br> в "Небольшая площадь"*/
+    margin: 0 auto;
+    margin-top: 31px;
 }
 
 .advantageRibbon .fewTourists {
@@ -203,17 +334,22 @@ header {
 }
 
 .interestedRibbon {
+    padding: 0;
+    margin: 0;
     padding-top: 57px;
     width: 434px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
+/*.interestedRibbon p{
+    width: 200px;           не спасает
+}
+*/
 .form {
     width: 568px;
     margin: 0 auto;
-
 }
 
 .form h2 {
@@ -223,16 +359,19 @@ header {
 }
 
 .form .formLine {
-    hight: 38px;
+    height: 38px;
     margin-left: 54px;
     margin-right: 51px;
-
 }
 
 .form button {
     height: 58px;
     margin: 54px 0 55px 55px;
     width: 458px;
+}
+
+.formLine label {
+    color: #000000;
 }
 
 footer .container {
@@ -253,6 +392,26 @@ footer .container {
     margin-top: 36px;
 }
 
+.footerSocial .socialBtn {
+    display: inline-block;
+    height: 48px;
+    width: 46px;
+    background-color: #81b3d2;
+}
+
+.footerSocial .socialBtnVk {
+    margin-right: 2px;
+}
+
+.footerSocial .socialBtnFb {
+    width: 47px;
+    margin-right: 2px;
+}
+
+.footerSocial.socialBtnInst {
+
+}
+
 .footerCopyright {
     width: 195px;
     float: left;
@@ -263,14 +422,22 @@ footer .container {
 }
 
 .footerCopyright span {
-    margin-top: 54px;
+    margin-top: -40px; /*почему так интересно вышло?*/
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /*======================================
  positioning elements hotels
 =======================================*/
+.filter {
+    position: relative;
+}
+
 .filter form {
     margin-left: 72px;
+    position: absolute;
+    top: 0;
 }
 
 .infrastructureFilter {
@@ -279,10 +446,18 @@ footer .container {
     margin-right: 115px;
 }
 
+.infrastructureFilter label {
+    display: block;
+}
+
 .habitationFilter {
     width: 136px; /*почему, если задать min-width область становистя широкой?*/
     float: left;
     margin-right: 354px;
+}
+
+.habitationFilter label {
+    display: block;
 }
 
 .priceFilter {
@@ -310,13 +485,16 @@ footer .container {
 }
 
 .sort {
-    width: 353px;
     float: left;
 }
 
 .upDown {
     width: 36px;
     float: right;
+}
+
+.upDown a {
+    text-decoration: none;
 }
 
 .searchedItems {

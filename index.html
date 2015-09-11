@@ -4,16 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
+    <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.png"></a>
+
     <div class="container clearfix gl1">
 
         <nav class="mainNavigation gl0">
-            <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.jpg"></a>
+
             <ul>
                 <li>
                     <a href="#">Информация</a>
@@ -21,7 +25,6 @@
                 <li>
                     <a href="#">Фото и видео</a>
                 </li>
-
 
                 <li>
                     <a href="#">Карта сайта</a>
@@ -50,22 +53,26 @@
     </section>
 
 
-    <div class="photoRibbon photoRibbonRight gl2">
-        <img src="img/picTrueCity_800_256.jpg" width="" height="">
+    <div class="photoRibbon photoRibbonRight clearfix gl2">
+        <img src="pic/picTrueCity_800_256.jpg" width="" height="">
 
-        <section class="advantages gl3">
-            <h2 class="caption">Настоящий городок</h2>
+        <section class="advantages">
 
-            <p class="description">— №1 —</p>
+            <div class="advantagesContent">
+                <h2 class="caption">Настоящий городок</h2>
 
-            <p class="description">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+                <p class="description">— №1 —</p>
+
+                <p class="description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
         </section>
     </div>
 
     <div class="advantagePicsRibbon cleafix gl3">
         <figure class="gl0">
-            <img src="img/spriteHouseFoodSouvenire.png" width="" height="">
-
+            <div class="advantagesPicsRibbonSprite home">
+                <!--<img src="img/spriteHouseFoodSouvenire.png" width="" height="">-->
+            </div>
             <section class="advantages">
                 <h2 class="caption">Жилье</h2>
 
@@ -74,33 +81,40 @@
         </figure>
 
         <figure class="gl0">
-            <img src="img/spriteHouseFoodSouvenire.png" width="" height="">
+            <div class="advantagesPicsRibbonSprite food">
+                <!--<img src="img/spriteHouseFoodSouvenire.png" width="" height="">-->
+            </div>
+
             <section class="advantages">
                 <h2 class="caption">Еда</h2>
 
-                <p class="description">Всегда заказывай фирменный бургер,<br>вы не разочаруетесь!</p>
+                <p class="description">Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
             </section>
         </figure>
 
         <figure class="gl0">
-            <img src="img/spriteHouseFoodSouvenire.png" width="" height="">
+            <div class="advantagesPicsRibbonSprite souvenir">
+                <!--<img src="img/spriteHouseFoodSouvenire.png" width="" height="">-->
+            </div>
             <section class="advantages">
                 <h2 class="caption">Сувениры</h2>
 
-                <p class="description">Не только китайского,<br>но и местного производства!</p>
+                <p class="description">Не только китайского, но и местного производства!</p>
             </section>
         </figure>
     </div>
 
-    <div class="photoRibbon photoRibbonLeft gl2">
-        <img src="img/picDevilBridge_800_256.jpg" width="" height="">
+    <div class="photoRibbon photoRibbonLeft clearfix gl2">
+        <img src="pic/picDevilBridge_800_256.jpg" width="" height="">
 
         <section class="advantages gl0">
-            <h2 class="caption">Там есть мост дьявола</h2>
+            <div class="advantagesContent">
+                <h2 class="caption">Там есть мост дьявола</h2>
 
-            <p class="description">— №2 —</p>
+                <p class="description">— №2 —</p>
 
-            <p class="description">Да, по нему можн пройти!<br> Если конечно вы осмелитесь</p>
+                <p class="description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
         </section>
     </div>
 
@@ -119,7 +133,7 @@
 
             <p class="description">— №4 —</p>
 
-            <p class="description">Еать в Седону из<br> Лас-Вегаса совсем<br> не скучно!</p>
+            <p class="description">Еать в Седону из Лас-Вегаса совсем не скучно!</p>
         </section>
 
         <section class="advantages fewTourists gl2">
@@ -127,14 +141,14 @@
 
             <p class="description">— №5 —</p>
 
-            <p class="description">Большинство едет в<br>Гранд Каньон и<br>толпится там</p>
+            <p class="description">Большинство едет в Гранд Каньон и толпится там</p>
         </section>
     </div>
 
     <section class="interestedRibbon gl3">
         <span>Заинтересовались?</span>
 
-        <p>Укажите предполагаемые даты поездки<br>
+        <p>Укажите предполагаемые даты поездки
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </section>
 
@@ -185,9 +199,9 @@
         </div>
 
         <div class="footerSocial gl2">
-            <a href="#" class="socialBtn socialBtnVk">Вконтакте</a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnFb">Фейсбук</a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnInst">Инстаграм</a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnVk"></a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnFb"></a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnInst"></a> <!--It should be icon font-->
         </div>
         <div class="footerCopyright gl2">
             <span>Website by</span>
