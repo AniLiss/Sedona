@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Отели</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'
+          type='text/css'>
+    <link href="css/normalize.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -33,33 +36,45 @@
 
 
         <div class="filter  cleafix gl1">
-            <img src="img/bgMain.png" width="" height="">
-
+            <div class="bgMain"><!----></div>
+            <!--<img src="img/bgMain.png" width="" height="">-->
             <form class="gl2" action="/echo" method="post">
 
                 <div class="infrastructureFilter gl2">
                     <h3 class="searchCriteria">Инфраструктура</h3>
-                    <label>
-                        <input type="checkbox" name="pool" checked>Бассейн
+                    <label for="pool">
+                        <!--<i class="icon-check-on"></i>-->
+                        <input type="checkbox" name="pool" id="pool" checked>
+                        <span>Бассейн</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="parkingLot">Парковка
+                    <label for="parkingLot">
+                        <!--<i class="icon-check-off"></i>-->
+                        <input type="checkbox" name="parkingLot" id="parkingLot">
+                        <span>Парковка</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="wiFi">Wi-Fi
+                    <label for="wiFi">
+                        <!--<i class="icon-check-off"></i>-->
+                        <input type="checkbox" name="wiFi" id="wiFi">
+                        <span>Wi-Fi</span>
                     </label>
                 </div>
 
                 <div class="habitationFilter gl3">
                     <h3 class="searchCriteria">Тип жилья</h3>
-                    <label>
-                        <input type="checkbox" name="hotel" checked>Гостиница
+                    <label for="hotel">
+                        <!--<i class="icon-check-on"></i>-->
+                        <input type="checkbox" name="hotel" id="hotel" checked>
+                        <span>Гостиница</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="motel" checked>Мотель
+                    <label for="motel">
+                        <!--<i class="icon-check-on"></i>-->
+                        <input type="checkbox" name="motel" id="motel" checked>
+                        <span>Мотель</span>
                     </label>
-                    <label>
-                        <input type="checkbox" name="apartment" checked>Апартаменты
+                    <label for="apartment">
+                        <!--<i class="icon-check-on"></i>-->
+                        <input type="checkbox" name="apartment" id="apartment" checked>
+                        <span>Апартаменты</span>
                     </label>
                 </div>
 
@@ -67,26 +82,31 @@
                     <h3 class="searchCriteria">Стоимость в сутки(р):</h3>
 
                     <div class="priceFilterFrame">
-                        <label>От<input type="text" name="from" placeholder="0"></label>
+                        <label for="from">От<input type="text" name="from" id="from" placeholder="0"></label>
                         <span class="delimiter"></span>
-                        <label>До<input type="text" name="till" placeholder="0"></label>
+                        <label for="till">До<input type="text" name="till" id="till" placeholder="3000"></label>
                     </div>
 
 
-                    <div class="priceFilterScrollBox gl1">
-                        <span class="/greyLine.png"></span>
+                    <div class="priceFilterScrollBox">
 
-                        <button class="roundButton">
-                            <img src="img/hotels/btnRound.png">
-                        </button>
+                        <div class="greyLine">
+                            <div style="width: 80%" class="whiteLine"></div>
+                        </div>
+                        <div class="toggle toggle-min"></div>
+                        <div class="toggle toggle-max"></div>
 
-                        <span class="/whiteLine.png"></span>
+                        <!--<button class="roundButton">-->
+                        <!--<img src="img/hotels/btnRound.png">-->
+                        <!--</button>-->
 
-                        <button class="roundButtonActive">
-                            <img src="img/hotels/btnRound.png">
-                        </button>
+                        <!--<span class="whiteLine"></span>-->
 
-                        <span class="/greyLine.png"></span>
+                        <!--<button class="roundButtonActive">-->
+                        <!--<img src="img/hotels/btnRound.png">-->
+                        <!--</button>-->
+
+                        <!--<span class="greyLine"></span>-->
 
                     </div>
                 </div>
@@ -126,7 +146,13 @@
 
             <!-- hr -->
             <div class="item gl2">
-                <img src="img/hotels/picAmaraResolt&Spa.jpg" width="" height="">
+                <div class="rating">
+                    <div class="stars">★ ★ ★ ★</div>
+                    <div class="scale">Рейтинг:<span>8,5</span>
+                    </div>
+                </div>
+
+                <img src="pic/picAmaraResolt&Spa.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation gl0">
                     <h2 class="caption">Amara Resolt & Spa</h2>
@@ -145,18 +171,18 @@
                     </div>
                 </article>
 
-                <div class="rating">
-                    <div class="stars">★ ★ ★ ★</div>
-                    <div class="scale">Рейтинг:<span>8,5</span>
-                    </div>
-                </div>
 
             </div>
 
             <!-- hr -->
 
             <div class="item gl2">
-                <img src="img/hotels/picDesertQuailInn.jpg" width="" height="">
+                <div class="rating">
+                    <div class="stars">★ ★</div>
+                    <div class="scale">Рейтинг:<span>8,9</span>
+                    </div>
+                </div>
+                <img src="pic/picDesertQuailInn.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation gl0">
                     <h2 class="caption">Desert Quail Inn</h2>
@@ -175,17 +201,18 @@
                     </div>
                 </article>
 
-                <div class="rating">
-                    <div class="stars">★ ★</div>
-                    <div class="scale">Рейтинг:<span>8,9</span>
-                    </div>
-                </div>
+
             </div>
 
             <!-- hr -->
 
             <div class="item gl2">
-                <img src="img/hotels/picVillasAtPocoDiablo.jpg" width="" height="">
+                <div class="rating">
+                    <div class="stars">★ ★ ★</div>
+                    <div class="scale">Рейтинг:<span>9,2</span>
+                    </div>
+                </div>
+                <img src="pic/picVillasAtPocoDiablo.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation gl0">
                     <h2 class="caption">Villas At Poco Diablo</h2>
@@ -204,11 +231,7 @@
                     </div>
                 </article>
 
-                <div class="rating">
-                    <div class="stars">★ ★ ★</div>
-                    <div class="scale">Рейтинг:<span>9,2</span>
-                    </div>
-                </div>
+
             </div>
 
             <!-- hr -->
@@ -220,14 +243,22 @@
     <div class="container clearfix">
         <a class="visitSedona" href="#">#visitsedona</a>
 
-        <div class="footerSocial">
-            <a href="#" class="socialBtn socialBtnVk"></a>
-            <a href="#" class="socialBtn socialBtnFb"></a>
-            <a href="#" class="socialBtn socialBtnInst"></a>
+        <div class="footerSocial gl2">
+            <a href="#" class="socialBtn socialBtnTw">
+                <i class="icon-twitter"></i>
+            </a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnFb">
+                <i class="icon-facebook"></i>
+            </a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnInst">
+                <i class="icon-youtube"></i>
+            </a> <!--It should be icon font-->
         </div>
         <div class="footerCopyright">
             <span>Website by</span>
-            <img src="img/iconHtmlAcademyBlack.png" width="" height="">
+            <a href="#">
+                <img src="img/iconHtmlAcademyBlack.png" width="113" height="39">
+            </a>
         </div>
     </div>
 </footer>

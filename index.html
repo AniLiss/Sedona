@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
+    <link href="css/normalize.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
     <link href="css/style.css" rel="stylesheet">
@@ -12,11 +13,9 @@
 <body>
 
 <header>
-    <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.png"></a>
-
     <div class="container clearfix gl1">
-
-        <nav class="mainNavigation gl0">
+        <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.png"></a>
+        <nav class="mainNavigation l0">
 
             <ul>
                 <li>
@@ -27,7 +26,7 @@
                 </li>
 
                 <li>
-                    <a href="#">Карта сайта</a>
+                    <a href="#">Карта штата</a>
                 </li>
                 <li>
                     <a href="#">Гостиницы</a>
@@ -70,7 +69,7 @@
 
     <div class="advantagePicsRibbon cleafix gl3">
         <figure class="gl0">
-            <div class="advantagesPicsRibbonSprite home">
+            <div class="advantagesPicsRibbonSprite">
                 <!--<img src="img/spriteHouseFoodSouvenire.png" width="" height="">-->
             </div>
             <section class="advantages">
@@ -148,50 +147,54 @@
     <section class="interestedRibbon gl3">
         <span>Заинтересовались?</span>
 
-        <p>Укажите предполагаемые даты поездки
+        <p>Укажите предполагаемые даты поездки<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </section>
 
-    <div class="form gl2">
-        <h2 class="caption gl1"><a href="#">Поиск гостиницы в Седоне</a></h2>
+    <div class="form cleafix gl2">
+        <h2 class="gl1"><a class="caption" href="#">Поиск гостиницы в Седоне</a></h2>
 
         <form action="/echo" method="post">
 
-            <div class="formLine gl0">
-                <label>Дата заезда:
-                    <input type="text" name="arrivalDay">
-                    <img src="img/calendar.png" width="" height=""></label> <!--It should be icon font-->
+            <div class="formLine  gl0">
+                <label class="longLine">Дата заезда:
+                    <input type="text" name="arrivalDay" placeholder="24 апреля 2014">
+                </label> <!--<img src="img/calendar.png" width="" height="">It should be icon font-->
 
             </div>
 
-            <div class="formLine gl0">
+            <div class="formLine longLine gl0">
                 <label>Дата выезда:
-                    <input type="text" name="arrivalDay">
-                    <img src="img/calendar.png" width="" height=""></label> <!--It should be icon font-->
+                    <input type="text" name="arrivalDay" placeholder="4 июля 2014">
+                </label>
+                <!--<img src="img/calendar.png" width="" height="">It should be icon font-->
             </div>
 
-            <div class="formLine gl0">
-                <label>Взрослые:
-                    <img src="img/minus.png" width="" height=""> <!--It should be icon font-->
+            <div class="formLine shortLine gl0">
+                <label class="adults ">Взрослые:
+                    <!--<img src="img/minus.png" width="" height="">It should be icon font-->
                     <input type="text" name="amount">
-                    <img src="img/plus.png" width="" height=""></label> <!--It should be icon font-->
+                </label> <!--<img src="img/plus.png" width="" height="">It should be icon font-->
 
-                <label>Дети:
-                    <img src="img/minus.png" width="" height=""> <!--It should be icon font-->
+                <label class="children ">Дети:
+                    <!--<img src="img/minus.png" width="" height="">It should be icon font-->
                     <input type="text" name="amount">
-                    <img src="img/plus.png" width="" height=""></label> <!--It should be icon font-->
+                </label> <!--<img src="img/plus.png" width="" height="">It should be icon font-->
             </div>
 
             <button class="btn caption" type="submit">Найти</button>
         </form>
     </div>
 
-    <div class="map">
-        <img src="img/map.jpg" width="" height="">
-    </div>
+
+    <!--</div>-->
+    <!--<div class="container">-->
+    <!--<div class="map">-->
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1442143822349"-->
+    <!--width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+    <!--</div>-->
 
 </div>
-
 <footer class="gl2">
     <div class="container gl0 clearfix">
         <div class="visitSedona gl2">
@@ -199,15 +202,25 @@
         </div>
 
         <div class="footerSocial gl2">
-            <a href="#" class="socialBtn socialBtnVk"></a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnFb"></a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnInst"></a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnTw">
+                <i class="icon-twitter"></i>
+            </a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnFb">
+                <i class="icon-facebook"></i>
+            </a> <!--It should be icon font-->
+            <a href="#" class="socialBtn socialBtnInst">
+                <i class="icon-youtube"></i>
+            </a> <!--It should be icon font-->
         </div>
         <div class="footerCopyright gl2">
             <span>Website by</span>
-            <img src="img/iconHtmlAcademyBlack.png" width="" height="">
+            <a href="#">
+                <img src="img/iconHtmlAcademyBlack.png" width="113" height="39">
+            </a>
         </div>
     </div>
 </footer>
+
+
 </body>
 </html>

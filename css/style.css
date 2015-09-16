@@ -1,3 +1,112 @@
+/*symbols-sedona.css*/
+@font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.eot?60737633');
+    src: url('../font/symbols-sedona.eot?60737633#iefix') format('embedded-opentype'),
+    url('../font/symbols-sedona.woff?60737633') format('woff'),
+    url('../font/symbols-sedona.ttf?60737633') format('truetype'),
+    url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'symbols-sedona';
+    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "symbols-sedona";
+    font-style: normal;
+    font-weight: normal;
+    /*speak: none;*/
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-facebook:before {
+    content: '\66';
+}
+
+/* 'f' */
+.icon-twitter:before {
+    content: '\74';
+}
+
+/* 't' */
+.icon-up-dir:before {
+    content: '\25b2';
+}
+
+/* '?' */
+.icon-down-dir:before {
+    content: '\25bc';
+}
+
+/* '?' */
+.icon-star:before {
+    content: '\2605';
+}
+
+/* '?' */
+.icon-check-off:before {
+    content: '\2610';
+}
+
+/* '?' */
+.icon-check-on:before {
+    content: '\2611';
+}
+
+/* '?' */
+.icon-calendar:before {
+    content: '\e800';
+}
+
+/* '?' */
+.icon-plus:before {
+    content: '\e801';
+}
+
+/* '?' */
+.icon-minus:before {
+    content: '\e802';
+}
+
+/* '?' */
+.icon-youtube:before {
+    content: '\f39e';
+}
+
+/* '?'*/
+
 /*For index.html mainly */
 body {
     font-size: 14px;
@@ -5,6 +114,11 @@ body {
     color: #333333;
     font-weight: normal;
     font-family: "PT Sans", "Arial", sant-serif;
+    text-transform: uppercase;
+}
+
+body a {
+    color: #333333;
 }
 
 .mainNavigation {
@@ -18,6 +132,8 @@ body {
     color: #000000;
     font-weight: bold;
     font-family: "PT Sans", "Arial", sant-serif;
+    margin: 0;
+
 }
 
 .photoRibbon {
@@ -44,10 +160,15 @@ body {
     font-weight: bold;
 }
 
+.form h2 {
+    background-color: #766357;
+}
+
 .formLine {
     font-family: "PT Sans", "Arial", sant-serif;
     color: #ffffff;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .footerCopyright {
@@ -100,11 +221,15 @@ body {
 body {
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 header {
     padding: 5px 0;
     position: relative;
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .container {
@@ -147,15 +272,15 @@ header .logoMenu img {
 }
 
 .mainNavigation li:nth-child(1) {
-    margin-right: 153px;
+    margin-right: 144px;
 }
 
 .mainNavigation li:nth-child(2) {
-    margin-right: 395px;
+    margin-right: 383px;
 }
 
 .mainNavigation li:nth-child(3) {
-    margin-right: 180px;
+    margin-right: 156px;
 }
 
 .welcomeToSedona {
@@ -188,6 +313,8 @@ header .logoMenu img {
 .definition p {
     padding: 0;
     margin: 0;
+    padding-top: 39px;
+    width: 490px;
 }
 
 .definition {
@@ -219,9 +346,9 @@ header .logoMenu img {
 }
 
 .advantages .advantagesContent {
-    width: 220px;
+    width: 265px;
     position: absolute;
-    left: 85px;
+    left: 68px;
 }
 
 .advantagesContent h2 {
@@ -235,8 +362,8 @@ header .logoMenu img {
 }
 
 .photoRibbonLeft .advantagesContent {
-    width: 196px;
-    left: 100px;
+    width: 215px;
+    left: 90px;
 }
 
 .photoRibbonLeft {
@@ -266,31 +393,26 @@ header .logoMenu img {
     display: inline-block;
     width: 75px;
     height: 76px;
-    background: #bdc3c7;
     vertical-align: middle;
-    background-image: url("/img/spriteHouseFoodSouvenire.png"); /*почему не загружается изображение*/
+    background-image: url("../img/spriteHouseFoodSouvenire.png"); /*почему не загружается изображение*/
     background-repeat: no-repeat;
 }
 
-.home {
-    /*background-position: ;*/
-}
-
 .food {
-    /*background-position: ;*/
+    background-position: -85px 0;
 }
 
 .souvenir {
-    /*background-position: ;*/
+    background-position: -162px 0;
 }
 
 figure .advantages {
-    width: 240px;
+    width: 266px;
     margin: 0 auto;
 }
 
 figure:nth-child(3) .advantages {
-    width: 158px;
+    width: 195px;
     /*не получается китайского,
                                      но*/
 }
@@ -322,7 +444,7 @@ figure:nth-child(3) .advantages {
 }
 
 .advantageRibbon .description {
-    width: 226px;
+    width: 260px;
     /*ужиманием не получается достигнуть нужных переносов
                       либо делать два <p>, либо <br> в "Небольшая площадь"*/
     margin: 0 auto;
@@ -335,21 +457,31 @@ figure:nth-child(3) .advantages {
 
 .interestedRibbon {
     padding: 0;
-    margin: 0;
     padding-top: 57px;
-    width: 434px;
+    width: 437px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 45px;
 }
 
-/*.interestedRibbon p{
-    width: 200px;           не спасает
-}
-*/
 .form {
     width: 568px;
     margin: 0 auto;
+}
+
+.map {
+    position: absolute;
+    height: 593px;
+    bottom: -120px;
+}
+
+.form input {
+    border: 0;
+    background-color: #f2f2f2;
+    height: 38px;
+    text-transform: uppercase;
+    color: #000000; /*почему не срабатывает черный цвет?*/
+    font-weight: bold;
 }
 
 .form h2 {
@@ -358,16 +490,78 @@ figure:nth-child(3) .advantages {
     padding-bottom: 33px;
 }
 
+.form a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .form .formLine {
-    height: 38px;
+    height: 40px;
     margin-left: 54px;
     margin-right: 51px;
+    position: relative;
+}
+
+.longLine input {
+    width: 346px;
+    float: right;
+}
+
+.longLine::before {
+    content: url("../img/bgCalendar.png");
+    position: absolute;
+    right: 9px;
+    top: 8px;
+}
+
+.children::before {
+    content: url("../img/bgMinus.png");
+    position: absolute;
+    top: 8px;
+    right: 90px;
+}
+
+.children::after {
+    content: url("../img/bgPlus.png");
+    position: absolute;
+    top: 12px;
+    right: 13px;
+}
+
+.adults::before {
+    content: url("../img/bgMinus.png");
+    position: absolute;
+    top: 8px;
+    left: 125px;
+}
+
+.adults::after {
+    content: url("../img/bgPlus.png");
+    position: absolute;
+    top: 12px;
+    left: 201px;
+}
+
+.formLine .children {
+    float: right;
+}
+
+.adults input {
+    margin-left: 40px;
+}
+
+.shortLine input {
+    width: 114px;
 }
 
 .form button {
     height: 58px;
-    margin: 54px 0 55px 55px;
+    margin: 24px 0 55px 55px;
     width: 458px;
+    background-color: transparent;
+    border: 0;
+    background: #81b3d2;
+    text-transform: uppercase;
 }
 
 .formLine label {
@@ -383,6 +577,11 @@ footer .container {
     float: left;
     margin-right: 256px;
     margin-top: 51px;
+
+}
+
+.visitSedona a {
+    text-decoration: none;
 }
 
 .footerSocial {
@@ -390,6 +589,29 @@ footer .container {
     float: left;
     margin-right: 227px;
     margin-top: 36px;
+    position: relative;
+}
+
+.footerSocial i {
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    padding-bottom: 36px;
+}
+
+.footerSocial .icon-twitter {
+    top: 13px;
+    left: 10px;
+}
+
+.footerSocial .icon-facebook {
+    top: 13px;
+    left: 61px;
+}
+
+.footerSocial .icon-youtube {
+    top: 13px;
+    left: 114px;
 }
 
 .footerSocial .socialBtn {
@@ -399,7 +621,7 @@ footer .container {
     background-color: #81b3d2;
 }
 
-.footerSocial .socialBtnVk {
+.footerSocial .socialBtnTw {
     margin-right: 2px;
 }
 
@@ -431,13 +653,22 @@ footer .container {
  positioning elements hotels
 =======================================*/
 .filter {
+    /* position: relative;*/
+    background-image: url("../img/bgMain.png");
+    overflow: hidden;
+}
+
+.bgMain {
     position: relative;
+    background-image: url("../img/bgMain.png"); /*не получается*/
+    background-repeat: no-repeat;
 }
 
 .filter form {
     margin-left: 72px;
-    position: absolute;
-    top: 0;
+
+    /*position: absolute;
+    top: 0;*/
 }
 
 .infrastructureFilter {
@@ -456,13 +687,34 @@ footer .container {
     margin-right: 354px;
 }
 
-.habitationFilter label {
+/*.habitationFilter label {
     display: block;
+    position: relative;
+}*/
+.filter input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + span:before {
+    content: "\2611";
+    color: #b5b5b5;
+}
+
+input[type="checkbox"] + span:before {
+    content: "\2610";
+    font-size: 26px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.filter label:hover {
+    color: #fefefe;
 }
 
 .priceFilter {
     width: 328px;
     float: left;
+    position: relative;
 }
 
 .priceFilterFrame, .priceFilterScrollBox {
@@ -470,12 +722,107 @@ footer .container {
     float: right;
 }
 
+.priceFilterFrame {
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    height: 36px;
+}
+
+.priceFilter input {
+    background-color: transparent;
+    border: 0;
+    width: 79px;
+    margin-left: 5px;
+
+}
+
+.priceFilter label {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.priceFilter label:first-child {
+    /* width: 157px;*/
+    padding-left: 65px;
+
+}
+
+.priceFilter #from /* input:nth-child(1)*/
+{
+
+    margin-right: 44px;
+}
+
+.priceFilter #till /*input:nth-child(2)*/
+{
+    margin-right: 0;
+    width: 75px;
+}
+
+.delimiter {
+    position: absolute;
+    background-color: #FFF;
+    height: 22px;
+    width: 2px;
+    margin-top: 7px;
+    left: 50%;
+}
+
 .filter button:last-child {
     width: 137px;
     float: right;
-    margin-right: 168px;
+    margin-right: 153px;
     margin-top: 23px;
     margin-bottom: 33px;
+    cursor: pointer;
+}
+
+.priceFilterScrollBox {
+    position: relative;
+}
+
+.whiteLine {
+    height: 2px;
+    background: #ffffff;
+}
+
+.greyLine {
+    height: 2px;
+    background: #ababab;
+    /* background: #ffffff;
+     opacity: 0.5;*/
+    margin-top: 20px;
+}
+
+.priceFilterScrollBox .toggle {
+    width: 4px;
+    height: 4px;
+    border: 8px solid #fff;
+    background: #ababab;
+    box-shadow: 0 0 1px 0 #ababab;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    cursor: pointer;
+}
+
+.priceFilterScrollBox .toggle-min {
+    left: 0;
+
+}
+
+.priceFilterScrollBox .toggle-max {
+    left: 252px;
+    background: #1c4f80;
+}
+
+.filter button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    height: 25px;
+    border-radius: 2px;
+    color: #ffffff;
+
 }
 
 .hasFound {
@@ -485,7 +832,9 @@ footer .container {
 }
 
 .sort {
-    float: left;
+    /* float: left;*/
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .upDown {
