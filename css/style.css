@@ -162,6 +162,7 @@ body a {
 
 .form h2 {
     background-color: #766357;
+    margin: 0;
 }
 
 .formLine {
@@ -196,10 +197,12 @@ body a {
 
 .sort .active {
     color: #81b3d2;
+    text-decoration: none;
 }
 
 .down, .stars {
     color: #81b3d2;
+    float: right;
 }
 
 .item .btn {
@@ -285,6 +288,8 @@ header .logoMenu img {
 
 .welcomeToSedona {
     position: relative;
+    height: 508px;
+    overflow: hidden;
 }
 
 .welcomeToSedona img:nth-child(2) {
@@ -412,7 +417,7 @@ figure .advantages {
 }
 
 figure:nth-child(3) .advantages {
-    width: 195px;
+    width: 197px;
     /*не получается китайского,
                                      но*/
 }
@@ -467,12 +472,13 @@ figure:nth-child(3) .advantages {
 .form {
     width: 568px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .map {
-    position: absolute;
+    /* position: absolute;*/
     height: 593px;
-    bottom: -120px;
+    bottom: -231px;
 }
 
 .form input {
@@ -502,9 +508,16 @@ figure:nth-child(3) .advantages {
     position: relative;
 }
 
+.formLine span {
+    display: inline-block;
+    margin-top: 11px;
+}
+
 .longLine input {
-    width: 346px;
+    width: 299px;
     float: right;
+    padding-left: 13px;
+    padding-right: 34px;
 }
 
 .longLine::before {
@@ -512,13 +525,15 @@ figure:nth-child(3) .advantages {
     position: absolute;
     right: 9px;
     top: 8px;
+    cursor: pointer;
 }
 
 .children::before {
     content: url("../img/bgMinus.png");
     position: absolute;
     top: 8px;
-    right: 90px;
+    right: 87px; /*90px;*/
+    cursor: pointer;
 }
 
 .children::after {
@@ -526,13 +541,15 @@ figure:nth-child(3) .advantages {
     position: absolute;
     top: 12px;
     right: 13px;
+    cursor: pointer;
 }
 
 .adults::before {
     content: url("../img/bgMinus.png");
     position: absolute;
     top: 8px;
-    left: 125px;
+    left: 130px;
+    cursor: pointer;
 }
 
 .adults::after {
@@ -540,6 +557,7 @@ figure:nth-child(3) .advantages {
     position: absolute;
     top: 12px;
     left: 201px;
+    cursor: pointer;
 }
 
 .formLine .children {
@@ -551,7 +569,8 @@ figure:nth-child(3) .advantages {
 }
 
 .shortLine input {
-    width: 114px;
+    width: 54px;
+    padding: 0 30px;
 }
 
 .form button {
@@ -562,32 +581,58 @@ figure:nth-child(3) .advantages {
     border: 0;
     background: #81b3d2;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .formLine label {
     color: #000000;
 }
 
-footer .container {
-    padding-left: 132px;
+div.formContent {
+    position: absolute;
+    top: 0;
+    padding-top: 55px;
+    background: #ffffff;
+    margin: auto;
+    margin-left: -284px;
+    left: 50%;
 }
+
+footer {
+    position: relative;
+}
+
+.footerRow {
+    /*position: absolute;*/
+    bottom: 0;
+    height: 120px;
+    position: absolute;
+    background: #ffffff;
+    opacity: 0.9;
+}
+
+/*footer .container {*/
+/*/!*padding-left: 132px;*!/*/
+/*margin: 0 auto;*/
+/*}*/
 
 .visitSedona {
     width: 136px;
     float: left;
     margin-right: 256px;
     margin-top: 51px;
-
+    margin-left: 132px;
+    font-weight: bold;
 }
 
 .visitSedona a {
     text-decoration: none;
+
 }
 
 .footerSocial {
-    width: 151px;
+    width: 152px;
     float: left;
-    margin-right: 227px;
     margin-top: 36px;
     position: relative;
 }
@@ -596,7 +641,7 @@ footer .container {
     color: white;
     font-size: 19px;
     position: absolute;
-    padding-bottom: 36px;
+    /* padding-bottom: 36px;*/
 }
 
 .footerSocial .icon-twitter {
@@ -636,7 +681,8 @@ footer .container {
 
 .footerCopyright {
     width: 195px;
-    float: left;
+    float: right;
+    margin-right: 103px;
 }
 
 .footerCopyright img {
@@ -684,7 +730,7 @@ footer .container {
 .habitationFilter {
     width: 136px; /*почему, если задать min-width область становистя широкой?*/
     float: left;
-    margin-right: 354px;
+    margin-right: 55px;
 }
 
 /*.habitationFilter label {
@@ -697,7 +743,6 @@ footer .container {
 
 input[type="checkbox"]:checked + span:before {
     content: "\2611";
-    color: #b5b5b5;
 }
 
 input[type="checkbox"] + span:before {
@@ -705,6 +750,11 @@ input[type="checkbox"] + span:before {
     font-size: 26px;
     cursor: pointer;
     margin-right: 15px;
+    color: #b5b5b5;
+}
+
+input[type="checkbox"]:hover + span:before {
+    color: #ffffff;
 }
 
 .filter label:hover {
@@ -713,8 +763,9 @@ input[type="checkbox"] + span:before {
 
 .priceFilter {
     width: 328px;
-    float: left;
+    float: right;
     position: relative;
+    margin-right: 72px;
 }
 
 .priceFilterFrame, .priceFilterScrollBox {
@@ -731,9 +782,8 @@ input[type="checkbox"] + span:before {
 .priceFilter input {
     background-color: transparent;
     border: 0;
-    width: 79px;
+    width: 65px;
     margin-left: 5px;
-
 }
 
 .priceFilter label {
@@ -749,14 +799,13 @@ input[type="checkbox"] + span:before {
 
 .priceFilter #from /* input:nth-child(1)*/
 {
-
-    margin-right: 44px;
+    margin-right: 58px;
 }
 
 .priceFilter #till /*input:nth-child(2)*/
 {
     margin-right: 0;
-    width: 75px;
+    width: 65px;
 }
 
 .delimiter {
@@ -769,9 +818,10 @@ input[type="checkbox"] + span:before {
 }
 
 .filter button:last-child {
+    padding: 8px 33px 8px 35px;
     width: 137px;
     float: right;
-    margin-right: 153px;
+    margin-right: 168px;
     margin-top: 23px;
     margin-bottom: 33px;
     cursor: pointer;
@@ -813,33 +863,57 @@ input[type="checkbox"] + span:before {
 
 .priceFilterScrollBox .toggle-max {
     left: 252px;
+}
+
+.priceFilterScrollBox .toggle:hover {
     background: #1c4f80;
 }
 
 .filter button {
+    text-transform: uppercase;
     background-color: transparent;
     border: 2px solid #ffffff;
-    height: 25px;
+    /* height: 25px;*/
     border-radius: 2px;
     color: #ffffff;
 
 }
 
 .hasFound {
+    display: inline-block;
     width: 115px;
     margin-right: 49px;
-    float: left;
 }
 
 .sort {
     /* float: left;*/
     display: inline-block;
     vertical-align: bottom;
+    font-weight: bold;
+}
+
+.sort span {
+    margin-right: 40px;
+}
+
+.sort a {
+    margin-right: 33px;
+    color: #cacaca;
+    text-decoration: none;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sort a:nth-child(2) {
+    border-bottom: none;
 }
 
 .upDown {
     width: 36px;
     float: right;
+}
+
+.upDown .up {
+    color: #cccccc;
 }
 
 .upDown a {
@@ -858,17 +932,21 @@ input[type="checkbox"] + span:before {
 .scale {
     margin-top: 47px;
     width: 110px;
-    height: 27px;
+    height: 22px;
+    text-align: center;
+    padding-top: 5px;
+    background: #f2f2f2;
 }
 
 .item {
-    padding: 30px 0;
+    margin: 30px 0;
+    position: relative;
 }
 
 .item img {
     display: inline-block;
     margin-right: 30px;
-    width: 165px;
+    width: 135px;
 }
 
 .searchedHabitation {
@@ -877,18 +955,52 @@ input[type="checkbox"] + span:before {
     vertical-align: top;
 }
 
+.searchedHabitation h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.item a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    padding: 6px 16px;
+}
+
 .fittedHabitation {
     float: left;
-    margin-right: 6px;
+    margin-right: 7px;
 }
 
-.fittedHabitation .btn {
+.fittedHabitation a {
     width: 110px;
+    background: #81b3d2;
+    margin-top: 19px;
 }
 
-.fittedPrice .btn {
+.fittedPrice a {
     width: 142px;
+    background: #766357;
 }
+
+.itemBtn {
+    position: absolute;
+    bottom: 10px;
+    left: 165px;
+    display: inline-flex;
+}
+
+.itemDetails {
+    margin-top: 10px;
+}
+
+/*.fittedHabitation .btn {
+    width: 110px;
+}*/
+
+/*.fittedPrice .btn {
+    width: 142px;
+}*/
 
 .gl0 {
     outline: solid;
