@@ -18,7 +18,7 @@
         <nav class="mainNavigation l0">
 
             <ul>
-                <li>
+                <li class="active">
                     <a href="#">Информация</a>
                 </li>
                 <li>
@@ -176,21 +176,22 @@
         <div class="footerCopyright gl2">
                 <span>Website by</span>
                 <a href="#">
-                    <img src="img/iconHtmlAcademyBlack.png" width="113" height="39" alt="">
+                  <div class="iconHtmlAcademySprite">  <!--<img src="img/iconHtmlAcademyBlack.png" width="113" height="39" alt="">-->
+                    </div>
                 </a>
         </div>
 
         <div class="footerSocial gl2">
             <a href="#" class="socialBtn socialBtnTw">
                 <i class="icon-twitter"></i>
-            </a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnFb">
+            </a><!--
+            --><a href="#" class="socialBtn socialBtnFb">
                 <i class="icon-facebook"></i>
-            </a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnInst">
+            </a><!--
+            --><a href="#" class="socialBtn socialBtnInst">
                 <i class="icon-youtube"></i>
-            </a> <!--It should be icon font-->
-        </div>
+            </a><!--
+            --></div>
 
         </div>
     </div>
@@ -200,35 +201,38 @@
     <div class="form formContent cleafix gl2">
 
         <form action="/echo" method="post">
-
-            <div class="formLine  gl0">
-                <label class="longLine">
+            <div class="formLine">
+                <i class="icon-calendar"></i>
+                <label class=" longLine">
                     <span>Дата заезда:</span>
                     <input type="text" name="arrivalDay" placeholder="24 апреля 2014">
-                </label> <!--<img src="img/calendar.png" width="" height="">It should be icon font-->
-
+                </label>
             </div>
-
-            <div class="formLine longLine gl0">
+            <div class="formLine longLine">
+                <i class="icon-calendar"></i>
                 <label>
                     <span>Дата выезда:</span>
                     <input type="text" name="arrivalDay" placeholder="4 июля 2014">
                 </label>
-                <!--<img src="img/calendar.png" width="" height="">It should be icon font-->
             </div>
 
-            <div class="formLine shortLine gl0">
-                <label class="adults ">
-                    <span>Взрослые:</span>
-                    <!--<img src="img/minus.png" width="" height="">It should be icon font-->
-                    <input type="text" name="amount">
-                </label> <!--<img src="img/plus.png" width="" height="">It should be icon font-->
+            <div class="formLine shortLine">
 
-                <label class="children ">
-                    <span>Дети:</span>
-                    <!--<img src="img/minus.png" width="" height="">It should be icon font-->
+                <label class="adults ">
+                    <i class="icon-minus"></i>
+                    <span>Взрослые:</span>
                     <input type="text" name="amount">
-                </label> <!--<img src="img/plus.png" width="" height="">It should be icon font-->
+                    <i class="icon-plus"></i>
+                </label>
+
+
+                <label class="children">
+                    <i class="icon-minus"></i>
+                    <span>Дети:</span>
+                    <input type="text" name="amount">
+                    <i class="icon-plus"></i>
+                </label>
+
             </div>
 
             <button class="btn caption" type="submit">Найти</button>

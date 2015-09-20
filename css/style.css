@@ -211,7 +211,17 @@ body a {
     font-weight: bold;
     font-family: "PT Sans", "Arial", sant-serif;
 }
-
+/*======================================
+=======================================*/
+.active a{
+    color: #766357;
+}
+.active a:hover{
+    color: #766357;
+}
+.active a:active{
+    color: #dbd8d5;
+}
 /*======================================
  positioning elements index
 =======================================*/
@@ -252,7 +262,7 @@ header .logoMenu img {
     */
 }
 
-.mainNavigation, .searchNavigation {
+.mainNavigation {
     margin-left: 72px;
     margin-right: 72px;
 }
@@ -266,6 +276,18 @@ header .logoMenu img {
 
 .mainNavigation a:hover {
     color: #81b3d2;
+}
+.mainNavigation a:active{
+    color: #cacaca;
+}
+.active a{
+    color: #766357;
+}
+.active a:hover{
+    color: #604e43;
+}
+.active a:active{
+    color: #dbd8d5;
 }
 
 .mainNavigation a {
@@ -493,7 +515,14 @@ figure:nth-child(3) .advantages {
     color: #000000; /*почему не срабатывает черный цвет?*/
     font-weight: bold;
 }
-
+.form input:hover{
+    background: #ebebeb;
+}
+.form input:focus{
+    background: none;
+    border: solid 2px #e5e5e5;
+    height: 34px;
+}
 .form h2 {
     padding-top: 35px;
     text-align: center;
@@ -524,48 +553,60 @@ figure:nth-child(3) .advantages {
     padding-right: 34px;
 }
 
-.longLine::before {
-    content: url("../img/bgCalendar.png");
-    position: absolute;
-    right: 9px;
-    top: 8px;
-    cursor: pointer;
-}
+/*.longLine::before {*/
+    /*content: '\e800'; /!*календарь*!/*/
+    /*font-family: symbols-sedona;*/
+    /*position: absolute;*/
+    /*right: 9px;*/
+    /*top: 8px;*/
+    /*cursor: pointer;*/
+/*}*/
 
-.children::before {
-    content: url("../img/bgMinus.png");
-    position: absolute;
-    top: 8px;
-    right: 87px; /*90px;*/
-    cursor: pointer;
-}
+/*.children::before {*/
+    /*content: '\e802';*/
+    /*font-family: symbols-sedona;*/
+    /*position: absolute;*/
+    /*top: 8px;*/
+    /*right: 87px; /!*90px;*!/*/
+    /*cursor: pointer;*/
+    /*color: red;*/
+/*}*/
+/*.children::before:hover{*/
+    /*color: #000000;*/
+/*}*/
+/*.children::after {*/
+    /*content: '\e801';*/
+    /*font-family: symbols-sedona;*/
+    /*position: absolute;*/
+    /*top: 12px;*/
+    /*right: 13px;*/
+    /*cursor: pointer;*/
+/*}*/
 
-.children::after {
-    content: url("../img/bgPlus.png");
-    position: absolute;
-    top: 12px;
-    right: 13px;
-    cursor: pointer;
-}
+/*.adults::before {*/
+    /*content: '\e802';*/
+    /*font-family: symbols-sedona;*/
+    /*position: absolute;*/
+    /*top: 8px;*/
+    /*left: 130px;*/
+    /*cursor: pointer;*/
+/*}*/
 
-.adults::before {
-    content: url("../img/bgMinus.png");
-    position: absolute;
-    top: 8px;
-    left: 130px;
-    cursor: pointer;
-}
+/*.adults::after {*/
+    /*content: '\e801';*/
+    /*font-family: symbols-sedona;*/
+    /*position: absolute;*/
+    /*top: 12px;*/
+    /*left: 201px;*/
+    /*cursor: pointer;*/
+/*}*/
 
-.adults::after {
-    content: url("../img/bgPlus.png");
-    position: absolute;
-    top: 12px;
-    left: 201px;
-    cursor: pointer;
+.formLine .adults{
+    position: relative;
 }
-
 .formLine .children {
     float: right;
+    position: relative;
 }
 
 .adults input {
@@ -587,11 +628,50 @@ figure:nth-child(3) .advantages {
     text-transform: uppercase;
     cursor: pointer;
 }
+.form button:hover{
+    background: #669ec0;
+}
+.form button:active{
+    background:#5496bd;
+    color: #94b9d2;
+}
 
 .formLine label {
     color: #000000;
-}
 
+}
+.formLine i{
+    font-size: 21px;
+    position: absolute;
+    color: #a9a9a9;
+    cursor: pointer;
+}
+.formLine i:hover{
+    color: #000000;
+}
+.formLine i:active{
+    color: #81b3d2;
+}
+.formLine .icon-calendar{
+    right: 9px;
+    top:6px;
+}
+.adults .icon-minus{
+    left: 120px;
+    top: -3px;
+}
+.adults .icon-plus{
+    left: 195px;
+    top: -3px;
+}
+.children .icon-minus{
+    left: 47px;
+    top: 8px;
+}
+.children .icon-plus{
+    left: 121px;
+    top: 8px;
+}
 div.formContent {
     position: absolute;
     top: 0;
@@ -604,6 +684,7 @@ div.formContent {
 
 footer {
     position: relative;
+    min-width: 1200px;
 }
 
 .footerRow {
@@ -671,12 +752,12 @@ footer {
 }
 
 .footerSocial .socialBtnTw {
-    margin-right: 2px;
+    margin-right: 6px;
 }
 
 .footerSocial .socialBtnFb {
     width: 47px;
-    margin-right: 2px;
+    margin-right: 6px;
 }
 
 .footerSocial.socialBtnInst {
@@ -688,17 +769,32 @@ footer {
     float: right;
     margin-right: 103px;
 }
-
-.footerCopyright img {
+.footerCopyright .iconHtmlAcademySprite{
+    display:block;
     margin-top: 41px;
+    width: 113px;
+    height: 134px;
+    background-image: url("../img/iconHtmlAcademy.png");
+    background-repeat: no-repeat ;
 }
+/*.footerCopyright img {*/
+    /*margin-top: 41px;*/
+/*}*/
 
 .footerCopyright span {
     margin-top: -40px; /*почему так интересно вышло?*/
     display: inline-block;
     vertical-align: middle;
 }
-
+.footerSocial a:hover{
+    background: #669ec0;
+}
+.footerSocial a:active{
+    background:#5496bd;
+}
+.footerSocial a:active i{
+    color: #94b9d2;
+}
 /*======================================
  positioning elements hotels
 =======================================*/
@@ -754,6 +850,8 @@ footer {
     display: none;
 }
 
+
+
 input[type="checkbox"]:checked + span:before {
     content: "\2611";
 }
@@ -772,7 +870,14 @@ input[type="checkbox"] + span:before {
 input[type="checkbox"]:hover + span:before {
     color: #ffffff;
 }
-
+input[type="checkbox"]:disabled + span:before{
+    color: #6a6a6a;
+    cursor: default ;
+}
+label .disabled{
+    color: #6a6a6a;
+    cursor: default;
+}
 .filter label:hover {
     color: #fefefe;
 }
@@ -829,8 +934,11 @@ input[type="checkbox"]:hover + span:before {
     background-color: #FFF;
     height: 22px;
     width: 2px;
-    margin-top: 7px;
-    left: 50%;
+    top: 61px;
+    left: 37%;
+}
+input[type="text"]:focus {
+    outline: none;
 }
 
 .filter button:last-child {
@@ -930,7 +1038,15 @@ input[type="checkbox"]:hover + span:before {
 .sort a:nth-child(4):hover {
     color: #81b3d2;
 }
+.sort a:nth-child(3):active {
+    color: #000000;
+    border-bottom: none;
+}
 
+.sort a:nth-child(4):active {
+    color: #000000;
+    border-bottom: none;
+}
 .upDown {
     width: 36px;
     float: right;
@@ -945,10 +1061,14 @@ input[type="checkbox"]:hover + span:before {
 .upDown a {
     text-decoration: none;
 }
-
+.upDown a:hover{
+    color: #000000;
+}
+.upDown a:active{
+    color: #81b3d2;
+}
 .searchedItems {
-    padding-top: 31px;
-    padding-bottom: 33px;
+    padding: 31px 72px 33px 72px;
 }
 
 .rating {
@@ -964,33 +1084,50 @@ input[type="checkbox"]:hover + span:before {
     background: #f2f2f2;
 }
 
-.item {
-    margin: 30px 0;
-    position: relative;
-}
 
+.item {
+    position: relative;
+    padding: 30px 72px;
+    border-top: 2px solid #e5e5e5;
+
+}
+.searchedResults .item:last-child{
+    border-bottom: 2px solid #e5e5e5;
+}
+/*hr{*/
+    /*color: #e5e5e5;*/
+    /*height: 2px;*/
+    /*width: 1200px;*/
+/*}*/
 .item img {
     display: inline-block;
     margin-right: 30px;
     width: 135px;
+    margin-top: 3px;
 }
 
 .searchedHabitation {
+    position: relative;
     display: inline-block;
     width: 258px;
     vertical-align: top;
 }
 
-.searchedHabitation h2 {
+.searchedHabitation a {
     margin: 0;
     padding: 0;
 }
-
+.searchedHabitation a:hover{
+    color:#81b3d2;
+}
+.searchedHabitation a:active{
+    color:#cacaca;
+}
 .item a {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    padding: 6px 16px;
+    /*padding: 6px 16px;*/
 }
 
 .fittedHabitation {
@@ -1002,24 +1139,42 @@ input[type="checkbox"]:hover + span:before {
     width: 110px;
     background: #81b3d2;
     margin-top: 19px;
+    padding: 6px 16px;
 }
+.fittedHabitation a:hover {
+   background:#669ec0;
+}
+.fittedHabitation a:active {
+    background: #5496bd;
+    color: #cccccc;/*тут вообще-то opacity ffffff*/
 
+}
 .fittedPrice a {
     width: 142px;
     background: #766357;
+    padding: 6px 16px;
 }
-
+.fittedPrice a:hover{
+    background: #604e43;
+}
+.fittedPrice a:active{
+    background: #503e33;
+    color: #cccccc;
+}
 .itemBtn {
     position: absolute;
-    bottom: 10px;
-    left: 165px;
+    bottom: 39px;
+    left: 237px;
     display: inline-flex;
 }
 
 .itemDetails {
     margin-top: 10px;
 }
-
+.itemDetails.fittedPrice {
+    position: absolute;
+    left: 112px;
+}
 /*.fittedHabitation .btn {
     width: 110px;
 }*/

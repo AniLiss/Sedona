@@ -63,8 +63,8 @@
                     <h3 class="searchCriteria">Тип жилья</h3>
                     <label for="hotel">
                         <!--<i class="icon-check-on"></i>-->
-                        <input type="checkbox" name="hotel" id="hotel" checked>
-                        <span>Гостиница</span>
+                        <input type="checkbox" name="hotel" id="hotel" checked disabled>
+                        <span class="disabled">Гостиница</span>
                     </label>
                     <label for="motel">
                         <!--<i class="icon-check-on"></i>-->
@@ -144,8 +144,7 @@
 
         <div class="searchedResults cleafix">
 
-            <!-- hr -->
-            <div class="item gl2">
+            <div class="item">
                 <div class="rating">
                     <div class="stars">★ ★ ★ ★</div>
                     <div class="scale">Рейтинг: <span>8,5</span>
@@ -155,15 +154,16 @@
                 <img src="pic/picAmaraResolt&Spa.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation gl0">
-                    <h2 class="caption">Amara Resolt & Spa</h2>
+
+                        <a href="#" class="caption">Amara Resolt & Spa</a>
+
 
                     <div class="itemDetails fittedHabitation">
-                        Гостиница
+                        <span>Гостиница</span>
 
                     </div>
                     <div class="itemDetails fittedPrice">
                         От <span>3500</span>р.
-
                     </div>
                 </article>
                 <div class="itemBtn">
@@ -176,9 +176,7 @@
                 </div>
             </div>
 
-            <!-- hr -->
-
-            <div class="item gl2">
+            <div class="item">
                 <div class="rating">
                     <div class="stars">★ ★</div>
                     <div class="scale">Рейтинг: <span>8,9</span>
@@ -187,10 +185,11 @@
                 <img src="pic/picDesertQuailInn.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation gl0">
-                    <h2 class="caption">Desert Quail Inn</h2>
-
+                    <div>
+                    <a href="#" class="caption">Desert Quail Inn</a>
+                    </div>
                     <div class="itemDetails fittedHabitation">
-                        Мотель
+                        <span>Мотель</span>
 
                     </div>
                     <div class="itemDetails fittedPrice">
@@ -210,7 +209,7 @@
 
             <!-- hr -->
 
-            <div class="item gl2">
+            <div class="item">
                 <div class="rating">
                     <div class="stars">★ ★ ★</div>
                     <div class="scale">Рейтинг: <span>9,2</span>
@@ -219,7 +218,7 @@
                 <img src="pic/picVillasAtPocoDiablo.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation gl0">
-                    <h2 class="caption">Villas At Poco Diablo</h2>
+                    <a href="#" class="caption">Villas At Poco Diablo</a>
 
                     <div class="itemDetails fittedHabitation">
                         <span>Аппартаменты</span>
@@ -246,28 +245,52 @@
         </div>
     </div>
 </div>
-</div>
+<!--</div>-->
+
 <footer>
     <div class="container clearfix">
-        <a class="visitSedona" href="#">#visitsedona</a>
+        <div class="visitSedona gl2">
+            <a class="caption" href="#">#visitsedona</a>
+        </div>
+
+        <div class="footerCopyright gl2">
+            <span>Website by</span>
+            <a href="#">
+                <div class="iconHtmlAcademySprite">
+                <!--<img src="img/iconHtmlAcademy.png" width="113" height="39" alt="">-->
+            </div>
+            </a>
+        </div>
 
         <div class="footerSocial gl2">
             <a href="#" class="socialBtn socialBtnTw">
                 <i class="icon-twitter"></i>
-            </a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnFb">
-                <i class="icon-facebook"></i>
-            </a> <!--It should be icon font-->
-            <a href="#" class="socialBtn socialBtnInst">
-                <i class="icon-youtube"></i>
-            </a> <!--It should be icon font-->
-        </div>
-        <div class="footerCopyright">
-            <span>Website by</span>
-            <a href="#">
-                <img src="img/iconHtmlAcademyBlack.png" width="113" height="39" alt="">
-            </a>
-        </div>
+            </a><!--
+            --><a href="#" class="socialBtn socialBtnFb">
+            <i class="icon-facebook"></i>
+        </a><!--
+            --><a href="#" class="socialBtn socialBtnInst">
+            <i class="icon-youtube"></i>
+        </a><!--
+            --></div>
+
+        <!--<div class="footerSocial gl2">-->
+            <!--<a href="#" class="socialBtn socialBtnTw">-->
+                <!--<i class="icon-twitter"></i>-->
+            <!--</a> &lt;!&ndash;It should be icon font&ndash;&gt;-->
+            <!--<a href="#" class="socialBtn socialBtnFb">-->
+                <!--<i class="icon-facebook"></i>-->
+            <!--</a> &lt;!&ndash;It should be icon font&ndash;&gt;-->
+            <!--<a href="#" class="socialBtn socialBtnInst">-->
+                <!--<i class="icon-youtube"></i>-->
+            <!--</a> &lt;!&ndash;It should be icon font&ndash;&gt;-->
+        <!--</div>-->
+        <!--<div class="footerCopyright">-->
+            <!--<span>Website by</span>-->
+            <!--<a href="#">-->
+                <!--<img src="img/iconHtmlAcademyBlack.png" width="113" height="39" alt="">-->
+            <!--</a>-->
+        <!--</div>-->
     </div>
 </footer>
 </body>
