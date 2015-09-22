@@ -12,11 +12,11 @@
 
 <body>
 
-<header class="gl0">
+<header>
     <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.png" width="138" height="70" alt=""></a>
 
-    <div class="container clearfix gl1">
-        <nav class="mainNavigation gl2">
+    <div class="container clearfix">
+        <nav class="mainNavigation">
 
             <ul>
                 <li>
@@ -26,7 +26,7 @@
                     <a href="#">Фото и видео</a>
                 </li>
                 <li>
-                    <a href="#">Карта сайта</a>
+                    <a href="#">Карта штата</a>
                 </li>
                 <li>
                     <a href="#">Гостиницы</a>
@@ -35,51 +35,44 @@
         </nav>
 
 
-        <div class="filter  cleafix gl1">
+        <div class="filter  cleafix">
             <div class="bgMain"><!----></div>
-            <!--<img src="img/bgMain.png" width="" height="">-->
-            <form class="gl2" action="/echo" method="post">
+            <form action="/echo" method="post">
 
-                <div class="infrastructureFilter gl2">
-                    <h3 class="searchCriteria">Инфраструктура</h3>
+                <div class="infrastructureFilter">
+                    <h3 class="searchCriteria">Инфраструктура:</h3>
                     <label for="pool">
-                        <!--<i class="icon-check-on"></i>-->
                         <input type="checkbox" name="pool" id="pool" checked>
                         <span>Бассейн</span>
                     </label>
                     <label for="parkingLot">
-                        <!--<i class="icon-check-off"></i>-->
                         <input type="checkbox" name="parkingLot" id="parkingLot">
                         <span>Парковка</span>
                     </label>
                     <label for="wiFi">
-                        <!--<i class="icon-check-off"></i>-->
                         <input type="checkbox" name="wiFi" id="wiFi">
                         <span>Wi-Fi</span>
                     </label>
                 </div>
 
-                <div class="habitationFilter gl3">
-                    <h3 class="searchCriteria">Тип жилья</h3>
+                <div class="habitationFilter">
+                    <h3 class="searchCriteria">Тип жилья:</h3>
                     <label for="hotel">
-                        <!--<i class="icon-check-on"></i>-->
                         <input type="checkbox" name="hotel" id="hotel" checked disabled>
                         <span class="disabled">Гостиница</span>
                     </label>
                     <label for="motel">
-                        <!--<i class="icon-check-on"></i>-->
                         <input type="checkbox" name="motel" id="motel" checked>
                         <span>Мотель</span>
                     </label>
                     <label for="apartment">
-                        <!--<i class="icon-check-on"></i>-->
                         <input type="checkbox" name="apartment" id="apartment" checked>
                         <span>Апартаменты</span>
                     </label>
                 </div>
 
-                <div class="priceFilter gl0">
-                    <h3 class="searchCriteria">Стоимость в сутки(р):</h3>
+                <div class="priceFilter">
+                    <h3 class="searchCriteria">Стоимость в сутки (р):</h3>
 
                     <div class="priceFilterFrame">
                         <label for="from">От<input type="text" name="from" id="from" placeholder="0"></label>
@@ -95,19 +88,6 @@
                         </div>
                         <div class="toggle toggle-min"></div>
                         <div class="toggle toggle-max"></div>
-
-                        <!--<button class="roundButton">-->
-                        <!--<img src="img/hotels/btnRound.png">-->
-                        <!--</button>-->
-
-                        <!--<span class="whiteLine"></span>-->
-
-                        <!--<button class="roundButtonActive">-->
-                        <!--<img src="img/hotels/btnRound.png">-->
-                        <!--</button>-->
-
-                        <!--<span class="greyLine"></span>-->
-
                     </div>
                 </div>
 
@@ -118,13 +98,13 @@
     </div>
 </header>
 
-<div class="container gl1">
+<div class="container">
 
-    <div class="searchNavigation cleafix gl2">
+    <div class="searchNavigation cleafix">
 
         <div class="searchedItems cleafix">
-            <div class="hasFound caption gl3">
-                Найдено:<span>3</span>
+            <div class="hasFound caption">
+                Найдено: <span>3</span>
             </div>
 
             <div class="sort">
@@ -136,7 +116,7 @@
                 <a href="#">по рейтингу</a>
             </div>
 
-            <div class="upDown gl0">
+            <div class="upDown">
                 <a class="up" href="#">▲</a>
                 <a class="down" href="#">▼</a>
             </div>
@@ -147,15 +127,16 @@
             <div class="item">
                 <div class="rating">
                     <div class="stars">★ ★ ★ ★</div>
-                    <div class="scale">Рейтинг: <span>8,5</span>
+                    <div class="scale">
+                        <span>Рейтинг: </span><span>8,5</span>
                     </div>
                 </div>
 
                 <img src="pic/picAmaraResolt&Spa.jpg" width="135" height="90" alt="">
 
-                <article class="searchedHabitation gl0">
+                <article class="searchedHabitation">
 
-                        <a href="#" class="caption">Amara Resolt & Spa</a>
+                    <a href="#" class="caption">Amara Resort & Spa</a>
 
 
                     <div class="itemDetails fittedHabitation">
@@ -163,7 +144,7 @@
 
                     </div>
                     <div class="itemDetails fittedPrice">
-                        От <span>3500</span>р.
+                        От <span>3500 </span>р.
                     </div>
                 </article>
                 <div class="itemBtn">
@@ -184,16 +165,16 @@
                 </div>
                 <img src="pic/picDesertQuailInn.jpg" width="135" height="90" alt="">
 
-                <article class="searchedHabitation gl0">
+                <article class="searchedHabitation">
                     <div>
-                    <a href="#" class="caption">Desert Quail Inn</a>
+                        <a href="#" class="caption">Desert Quail Inn</a>
                     </div>
                     <div class="itemDetails fittedHabitation">
                         <span>Мотель</span>
 
                     </div>
                     <div class="itemDetails fittedPrice">
-                        От <span>2000</span>р.
+                        От <span>2000 </span>р.
 
                     </div>
                 </article>
@@ -206,8 +187,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- hr -->
 
             <div class="item">
                 <div class="rating">
@@ -217,15 +196,15 @@
                 </div>
                 <img src="pic/picVillasAtPocoDiablo.jpg" width="135" height="90" alt="">
 
-                <article class="searchedHabitation gl0">
+                <article class="searchedHabitation">
                     <a href="#" class="caption">Villas At Poco Diablo</a>
 
                     <div class="itemDetails fittedHabitation">
-                        <span>Аппартаменты</span>
+                        <span>Апартаменты</span>
 
                     </div>
                     <div class=" itemDetails fittedPrice">
-                        От <span>4000</span>р.
+                        От <span>4000 </span>р.
 
                     </div>
                 </article>
@@ -241,56 +220,38 @@
 
             </div>
 
-            <!-- hr -->
         </div>
     </div>
 </div>
-<!--</div>-->
 
 <footer>
-    <div class="container clearfix">
-        <div class="visitSedona gl2">
-            <a class="caption" href="#">#visitsedona</a>
-        </div>
-
-        <div class="footerCopyright gl2">
-            <span>Website by</span>
-            <a href="#">
-                <div class="iconHtmlAcademySprite">
-                <!--<img src="img/iconHtmlAcademy.png" width="113" height="39" alt="">-->
+    <div class="hotelsFooter">
+        <div class="container clearfix">
+            <div class="visitSedona">
+                <a class="caption" href="#">#visitsedona</a>
             </div>
-            </a>
-        </div>
 
-        <div class="footerSocial gl2">
-            <a href="#" class="socialBtn socialBtnTw">
-                <i class="icon-twitter"></i>
-            </a><!--
+            <div class="footerCopyright">
+                <div class="hotelsfooterCopyright">
+                    <span>Website by</span>
+                </div>
+                <a href="#">
+                    <div class="iconHtmlAcademySprite"></div>
+                </a>
+            </div>
+
+            <div class="footerSocial">
+                <a href="#" class="socialBtn socialBtnTw">
+                    <i class="icon-twitter"></i>
+                </a><!--
             --><a href="#" class="socialBtn socialBtnFb">
-            <i class="icon-facebook"></i>
-        </a><!--
+                <i class="icon-facebook"></i>
+            </a><!--
             --><a href="#" class="socialBtn socialBtnInst">
-            <i class="icon-youtube"></i>
-        </a><!--
+                <i class="icon-youtube"></i>
+            </a><!--
             --></div>
-
-        <!--<div class="footerSocial gl2">-->
-            <!--<a href="#" class="socialBtn socialBtnTw">-->
-                <!--<i class="icon-twitter"></i>-->
-            <!--</a> &lt;!&ndash;It should be icon font&ndash;&gt;-->
-            <!--<a href="#" class="socialBtn socialBtnFb">-->
-                <!--<i class="icon-facebook"></i>-->
-            <!--</a> &lt;!&ndash;It should be icon font&ndash;&gt;-->
-            <!--<a href="#" class="socialBtn socialBtnInst">-->
-                <!--<i class="icon-youtube"></i>-->
-            <!--</a> &lt;!&ndash;It should be icon font&ndash;&gt;-->
-        <!--</div>-->
-        <!--<div class="footerCopyright">-->
-            <!--<span>Website by</span>-->
-            <!--<a href="#">-->
-                <!--<img src="img/iconHtmlAcademyBlack.png" width="113" height="39" alt="">-->
-            <!--</a>-->
-        <!--</div>-->
+        </div>
     </div>
 </footer>
 </body>
