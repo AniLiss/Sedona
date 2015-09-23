@@ -8,27 +8,24 @@ var popup = document.querySelector(".formContent");
 
 var form = popup.querySelector("form");
 var arrivalDay = popup.querySelector("[name='arrivalDay']");
-var departureDay = popup.querySelector("[name='departureDay']");
+var formStatus =false;
+var map = document.querySelector(".staticMap");
+map.classList.add("staticMapHidden");
+
 
 link.addEventListener("click", function(event) {
     event.preventDefault();
-//написать условие проверки
-//    if  ? окно открыто закрыть :
-//    if (classList="formContentShow"){
-//        popup.classList.remove("formContentShow");
-//    }
-//    else{
-    popup.classList.add("formContentShow");
-    arrivalDay.focus();
 
+    if(formStatus) {
+        popup.classList.remove("formContentShow");
+        formStatus = false;
+    }
+    else{
+        popup.classList.add("formContentShow");
+        arrivalDay.focus();
+        formStatus = true;
+    }
 });
-
-/*закрытие по кнопке открытия*/
-//close.addEventListener("click", function(event) {
-//    event.preventDefault();
-//    popup.classList.remove("formContentShow");
-//    //popup.classList.remove("modal-error");
-//});
 
 form.addEventListener("submit", function(event) {
     if (!(login.value && password.value)) {
@@ -42,7 +39,7 @@ window.addEventListener("keydown", function(event) {
     if (event.keyCode == 27) {
         if (popup.classList.contains("formContentShow")) {
             popup.classList.remove("formContentShow");
-            popup.classList.remove("modal-error");
         }
     }
 });
+

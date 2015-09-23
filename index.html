@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная</title>
-    <link href="css/normalize.css" rel="stylesheet"/>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'
+    <link href="css/normalise.min.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,7 +40,9 @@
 <div class="container">
 
     <div class="welcomeToSedona">
+        <div class="imgWelcomeToSedona">
         <img src="img/bgSedonaMainPic.jpg" width="1200" height="773" alt="Welcome to the gorgeous Sedona">
+        </div>
         <img src="img/iconMainLabelWelcomeSedonaGorgeous.png" width="458" height="352" alt="">
         <img src="img/bgBottomShape_1200.png" width="1200" height="57" alt="">
     </div>
@@ -68,7 +70,7 @@
         </section>
     </div>
 
-    <div class="advantagePicsRibbon cleafix">
+    <div class="advantagePicsRibbon clearfix">
         <figure>
             <div class="advantagesPicsRibbonSprite"></div>
             <section class="advantages">
@@ -113,7 +115,7 @@
         </section>
     </div>
 
-    <div class="advantageRibbon cleafix">
+    <div class="advantageRibbon clearfix">
 
         <section class="advantages smallSquare">
             <h2 class="caption">Небольшая площадь</h2>
@@ -150,7 +152,7 @@
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
     </section>
 
-    <div class="form cleafix">
+    <div class="form clearfix">
         <div class="searchHotelBtn">
             <h2>
                 <a class="caption" href="#">Поиск гостиницы в Седоне</a>
@@ -163,12 +165,15 @@
 
 <footer>
     <div class="container clearfix">
-        <!--карта-->
+
         <div class="map">
+
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.17731020665!2d-111.79513845!3d34.8543784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1442143822349"
-                    width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                 width="1200" height="593" style="border:0" allowfullscreen></iframe>
+            <img  class="staticMap" src="img/bgMap.png" width="1200" height="593" alt="">
+
         </div>
-        <!--карта-->
+
         <div class="footerRow container ">
             <div class="visitSedona">
                 <a class="caption" href="#">#visitsedona</a>
@@ -197,9 +202,7 @@
         </div>
     </div>
 
-    <!--форма за контейнером-->
-
-    <div class="form formContent cleafix">
+    <div class="form formContent clearfix">
 
         <form action="/echo" method="post">
             <div class="formLine">
@@ -239,18 +242,8 @@
             <button class="btn caption" type="submit">Найти</button>
         </form>
     </div>
-    <!--конец формы-->
+
 </footer>
-<script src="script.js"></script>
-<!--<script>-->
-    <!--var link = document.querySelector(".searchHotelBtn");-->
-    <!--var popup = document.querySelector(".formContent");-->
-
-    <!--link.addEventListener("click", function(event) {-->
-        <!--event.preventDefault();-->
-
-        <!--popup.classList.add("formContentShow");-->
-    <!--});-->
-<!--</script>-->
+<script src="js/script.min.js"></script>
 </body>
 </html>

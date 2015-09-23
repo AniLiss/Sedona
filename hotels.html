@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Отели</title>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
-    <link href="css/normalize.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalise.min.css" rel="stylesheet"/>
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,22 +35,22 @@
         </nav>
 
 
-        <div class="filter  cleafix">
+        <div class="filter  clearfix">
             <div class="bgMain"><!----></div>
             <form action="/echo" method="post">
 
                 <div class="infrastructureFilter">
                     <h3 class="searchCriteria">Инфраструктура:</h3>
                     <label for="pool">
-                        <input type="checkbox" name="pool" id="pool" checked>
+                        <input type="checkbox" id="pool" checked>
                         <span>Бассейн</span>
                     </label>
                     <label for="parkingLot">
-                        <input type="checkbox" name="parkingLot" id="parkingLot">
+                        <input type="checkbox" id="parkingLot">
                         <span>Парковка</span>
                     </label>
                     <label for="wiFi">
-                        <input type="checkbox" name="wiFi" id="wiFi">
+                        <input type="checkbox"  id="wiFi">
                         <span>Wi-Fi</span>
                     </label>
                 </div>
@@ -58,15 +58,15 @@
                 <div class="habitationFilter">
                     <h3 class="searchCriteria">Тип жилья:</h3>
                     <label for="hotel">
-                        <input type="checkbox" name="hotel" id="hotel" checked disabled>
+                        <input type="checkbox" id="hotel" checked disabled>
                         <span class="disabled">Гостиница</span>
                     </label>
                     <label for="motel">
-                        <input type="checkbox" name="motel" id="motel" checked>
+                        <input type="checkbox" id="motel" checked>
                         <span>Мотель</span>
                     </label>
                     <label for="apartment">
-                        <input type="checkbox" name="apartment" id="apartment" checked>
+                        <input type="checkbox" id="apartment" checked>
                         <span>Апартаменты</span>
                     </label>
                 </div>
@@ -75,9 +75,9 @@
                     <h3 class="searchCriteria">Стоимость в сутки (р):</h3>
 
                     <div class="priceFilterFrame">
-                        <label for="from">От<input type="text" name="from" id="from" placeholder="0"></label>
+                        <label for="from">От<input type="text" id="from" placeholder="0"></label>
                         <span class="delimiter"></span>
-                        <label for="till">До<input type="text" name="till" id="till" placeholder="3000"></label>
+                        <label for="till">До<input type="text" id="till" placeholder="3000"></label>
                     </div>
 
 
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                <button type="submit" name="show">Показать</button>
+                <button type="submit" id="show">Показать</button>
 
             </form>
         </div>
@@ -100,9 +100,15 @@
 
 <div class="container">
 
-    <div class="searchNavigation cleafix">
+    <div class="searchNavigation clearfix">
 
-        <div class="searchedItems cleafix">
+        <div class="searchedItems clearfix">
+
+            <div class="upDown">
+                <a class="up" href="#">▲</a>
+                <a class="down" href="#">▼</a>
+            </div>
+
             <div class="hasFound caption">
                 Найдено: <span>3</span>
             </div>
@@ -116,13 +122,10 @@
                 <a href="#">по рейтингу</a>
             </div>
 
-            <div class="upDown">
-                <a class="up" href="#">▲</a>
-                <a class="down" href="#">▼</a>
-            </div>
+
         </div>
 
-        <div class="searchedResults cleafix">
+        <div class="searchedResults clearfix">
 
             <div class="item">
                 <div class="rating">
@@ -132,7 +135,7 @@
                     </div>
                 </div>
 
-                <img src="pic/picAmaraResolt&Spa.jpg" width="135" height="90" alt="">
+                <img src="pic/picAmaraResolt&amp;Spa.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation">
 
@@ -149,7 +152,7 @@
                 </article>
                 <div class="itemBtn">
                     <div class="fittedHabitation">
-                        <a href="#" name="extraInf" class="btn">Подробнее</a>
+                        <a href="#" name="extraInf"  class="btn">Подробнее</a>
                     </div>
                     <div class="fittedPrice">
                         <a href="#" name="book" class="btn">Забронировать</a>

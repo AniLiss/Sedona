@@ -1,3 +1,5 @@
+/*fixed layout with 1200px width*/
+
 /*symbols-sedona.css*/
 @font-face {
     font-family: 'symbols-sedona';
@@ -9,17 +11,6 @@
     font-weight: normal;
     font-style: normal;
 }
-
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'symbols-sedona';
-    src: url('../font/symbols-sedona.svg?60737633#symbols-sedona') format('svg');
-  }
-}
-*/
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "symbols-sedona";
     font-style: normal;
@@ -31,7 +22,6 @@
     width: 1em;
     margin-right: .2em;
     text-align: center;
-    /* opacity: .8; */
 
     /* For safety - reset parent styles, that can break glyph codes*/
     font-variant: normal;
@@ -195,19 +185,6 @@ body a {
     letter-spacing: 0.3px;
 }
 
-.sort {
-    font-size: 12px;
-}
-
-.sort span {
-    color: #000000;
-}
-
-.sort .active {
-    color: #81b3d2;
-    text-decoration: none;
-}
-
 .down, .stars {
     color: #81b3d2;
     float: right;
@@ -216,7 +193,7 @@ body a {
 .stars {
     font-size: 24px;
     position: relative;
-    bottom: 7px;
+    bottom: 5px;
     letter-spacing: -1px;
 }
 
@@ -227,8 +204,7 @@ body a {
     font-family: "PT Sans", "Arial", sant-serif;
 }
 
-/*======================================
-=======================================*/
+/*======================================*/
 .active a {
     color: #766357;
 }
@@ -240,11 +216,10 @@ body a {
 .active a:active {
     color: #dbd8d5;
 }
-
 /*======================================
  positioning elements index
 =======================================*/
-.cleafix::after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -257,7 +232,7 @@ body {
 }
 
 header {
-    padding: 4px 0; /*5 было*/
+    padding: 4px 0;
     position: relative;
     display: block;
     width: 1200px;
@@ -277,14 +252,10 @@ header .logoMenu img {
     left: 44.4%;
     top: 0;
     z-index: 5;
-    /* display: block;
-     margin: 0px auto;
-    */
 }
 
 .mainNavigation {
     margin-left: 72px;
-    /*margin-right: 72px;*/
 }
 
 .mainNavigation li {
@@ -341,8 +312,16 @@ header .logoMenu img {
     position: relative;
     height: 508px;
     overflow: hidden;
+    background-color: #E1F0F7;
 }
-
+.imgWelcomeToSedona{
+    display: block;
+    position: relative;
+}
+.imgWelcomeToSedona img{
+    position: absolute;
+    top:-57px;
+}
 .welcomeToSedona img:nth-child(2) {
     position: absolute;
     top: 76px;
@@ -391,6 +370,7 @@ header .logoMenu img {
     padding-top: 51px;
     min-height: 203px;
     line-height: 24px;
+    overflow: hidden;
 }
 
 .photoRibbonRight {
@@ -454,12 +434,6 @@ header .logoMenu img {
 
 }
 
-/*.advantagePicsRibbon .description:nth-child(1){*/
-/**/
-/*line-height: 21px;*/
-/*margin-top: 19px;*/
-/*}*/
-
 .advantagePicsRibbon .advantagesPicsRibbonSprite {
     display: inline-block;
     width: 75px;
@@ -482,12 +456,6 @@ figure .advantages {
     margin: 22px auto;
 }
 
-/*figure:nth-child(3) .advantages {*/
-/*width: 197px;*/
-/*/!*не получается китайского,*/
-/*но*!/*/
-/*}*/
-
 .advantagePicsRibbon figure:nth-child(1) {
     margin-right: 92px;
     margin-left: 67px;
@@ -497,11 +465,6 @@ figure .advantages {
     margin-right: 91px;
 }
 
-/*
-.advantages h2{
-    margin: 0;
-    padding: 0;
-}*/
 .advantageRibbon {
     margin-left: 70px;
     margin-right: 70px;
@@ -556,17 +519,18 @@ figure .advantages {
 }
 
 .map {
-    /* position: absolute;*/
     height: 593px;
     bottom: -231px;
 }
-
+.staticMapHidden{
+    display: none;
+}
 .form input {
     border: 0;
     background-color: #f2f2f2;
     height: 38px;
     text-transform: uppercase;
-    color: #000000; /*почему не срабатывает черный цвет?*/
+    color: #000000;
     font-weight: bold;
 }
 
@@ -615,54 +579,6 @@ figure .advantages {
     padding-left: 8px;
     padding-right: 39px;
 }
-
-/*.longLine::before {*/
-/*content: '\e800'; /!*календарь*!/*/
-/*font-family: symbols-sedona;*/
-/*position: absolute;*/
-/*right: 9px;*/
-/*top: 8px;*/
-/*cursor: pointer;*/
-/*}*/
-
-/*.children::before {*/
-/*content: '\e802';*/
-/*font-family: symbols-sedona;*/
-/*position: absolute;*/
-/*top: 8px;*/
-/*right: 87px; /!*90px;*!/*/
-/*cursor: pointer;*/
-/*color: red;*/
-/*}*/
-/*.children::before:hover{*/
-/*color: #000000;*/
-/*}*/
-/*.children::after {*/
-/*content: '\e801';*/
-/*font-family: symbols-sedona;*/
-/*position: absolute;*/
-/*top: 12px;*/
-/*right: 13px;*/
-/*cursor: pointer;*/
-/*}*/
-
-/*.adults::before {*/
-/*content: '\e802';*/
-/*font-family: symbols-sedona;*/
-/*position: absolute;*/
-/*top: 8px;*/
-/*left: 130px;*/
-/*cursor: pointer;*/
-/*}*/
-
-/*.adults::after {*/
-/*content: '\e801';*/
-/*font-family: symbols-sedona;*/
-/*position: absolute;*/
-/*top: 12px;*/
-/*left: 201px;*/
-/*cursor: pointer;*/
-/*}*/
 
 .formLine .adults {
     position: relative;
@@ -793,11 +709,6 @@ footer {
     opacity: 0.9;
 }
 
-/*footer .container {*/
-/*/!*padding-left: 132px;*!/*/
-/*margin: 0 auto;*/
-/*}*/
-
 .visitSedona {
     width: 136px;
     float: left;
@@ -858,10 +769,6 @@ footer {
     margin-right: 6px;
 }
 
-.footerSocial.socialBtnInst {
-
-}
-
 .footerCopyright {
     width: 195px;
     float: right;
@@ -884,10 +791,6 @@ footer {
 .footerCopyright .iconHtmlAcademySprite:active {
     background-position: 0 -95px;
 }
-
-/*.footerCopyright img {*/
-/*margin-top: 41px;*/
-/*}*/
 
 .footerCopyright span {
     position: absolute;
@@ -915,48 +818,47 @@ footer {
     position: relative;
     top: 6px;
     background-image: url("../img/bgMain.png");
+
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
 }
 
 .bgMain {
     position: relative;
     background-image: url("../img/bgMain.png"); /*не получается*/
     background-repeat: no-repeat;
+    background-color: #5D6380;
 }
 
 .filter form {
     margin-left: 72px;
     padding-top: 9px;
-
-    /*position: absolute;
-    top: 0;*/
 }
 
 .filter span {
     cursor: pointer;
     display: block;
-    margin-bottom: 28px; /*new*/
-    margin-left: 40px; /*new*/
+    margin-bottom: 28px;
+    margin-left: 40px;
 }
 
 .infrastructureFilter {
     width: 140px;
     float: left;
-    margin-right: 115px;
+    margin-right: 114px;
     position: relative;
     top: 2px;
 }
 
 .infrastructureFilter label {
     display: block;
-    position: relative; /*new*/
-    top: 16px;
-    left: -1px;
+    position: relative;
+    margin-top: 27px;
+    margin-left: -1px;
 }
 
 .habitationFilter {
-    width: 136px; /*почему, если задать min-width область становистя широкой?*/
+    width: 136px;
     float: left;
     margin-right: 55px;
     position: relative;
@@ -966,8 +868,8 @@ footer {
 .habitationFilter label {
     display: block;
     position: relative;
-    top: 16px;
-    left: 3px;
+    margin-top: 27px;
+    margin-left: 2px;
 }
 
 .filter input[type="checkbox"] {
@@ -980,13 +882,14 @@ input[type="checkbox"]:checked + span:before {
 
 input[type="checkbox"] + span:before {
     content: "\2610";
+    font-family: "symbols-sedona";
     font-size: 26px;
     cursor: pointer;
     margin-right: 15px;
     color: #b5b5b5;
-    position: absolute; /*new*/
-    top: -10px; /*new*/
-    left: 0; /*new*/
+    position: absolute;
+    top: -4px;
+    left: 0;
 }
 
 input[type="checkbox"]:hover + span:before {
@@ -1011,14 +914,16 @@ label .disabled {
     width: 328px;
     float: right;
     position: relative;
-    margin-right: 71px;
-    top: 2px;
+    margin-right: 72px;
+    margin-top: 2px;
 }
 
 .priceFilterFrame {
     width: 314px;
     float: right;
     height: 32px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
 }
 
 .priceFilterScrollBox {
@@ -1028,16 +933,13 @@ label .disabled {
     left: 11px;
 }
 
-.priceFilterFrame {
-    border: 2px solid #ffffff;
-    border-radius: 3px;
-
-}
-
 .priceFilter input {
     background-color: transparent;
     border: 0;
     width: 65px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "PT Sans", "Arial", sant-serif;
 }
 
 .priceFilter label {
@@ -1046,20 +948,21 @@ label .disabled {
 }
 
 .priceFilter label:first-child {
-    /* width: 157px;*/
     padding-left: 65px;
 
 }
 
 .priceFilter #from /* input:nth-child(1)*/
 {
-    margin-right: 58px;
+    margin-right: 56px;
+    margin-left: 2px;
 }
 
 .priceFilter #till /*input:nth-child(2)*/
 {
     margin-right: 0;
     width: 65px;
+    margin-left: 2px;
 }
 
 .delimiter {
@@ -1076,13 +979,14 @@ input[type="text"]:focus {
 }
 
 .filter button:last-child {
-    padding: 8px 35px 7px;
+    padding: 7px 35px 7px;
     width: 137px;
     float: right;
     margin-right: 168px;
-    margin-top: 55px;
+    margin-top: 54px;
     margin-bottom: 23px;
     cursor: pointer;
+    letter-spacing: 0.5px;
 }
 
 .whiteLine {
@@ -1093,8 +997,6 @@ input[type="text"]:focus {
 .greyLine {
     height: 2px;
     background: #ababab;
-    /* background: #ffffff;
-     opacity: 0.5;*/
     margin-top: 20px;
 }
 
@@ -1106,7 +1008,7 @@ input[type="text"]:focus {
     box-shadow: 0 0 1px 0 #ababab;
     border-radius: 50%;
     position: absolute;
-    top: -10px; /*12*/
+    top: -10px;
     cursor: pointer;
 }
 
@@ -1127,10 +1029,8 @@ input[type="text"]:focus {
     text-transform: uppercase;
     background-color: transparent;
     border: 2px solid #ffffff;
-    /* height: 25px;*/
     border-radius: 2px;
     color: #ffffff;
-
 }
 
 .hasFound {
@@ -1142,13 +1042,19 @@ input[type="text"]:focus {
 }
 
 .sort {
-    /* float: left;*/
+    font-size: 12px;
     display: inline-block;
     vertical-align: bottom;
     font-weight: bold;
 }
 
+.sort .active {
+    color: #81b3d2;
+    text-decoration: none;
+}
+
 .sort span {
+    color: #000000;
     margin-right: 37px;
 }
 
@@ -1214,7 +1120,7 @@ input[type="text"]:focus {
 }
 
 .scale {
-    margin-top: 67px;
+    margin-top: 69px;
     width: 109px;
     height: 22px;
     text-align: center;
@@ -1223,39 +1129,35 @@ input[type="text"]:focus {
 }
 
 .item {
-    position: relative;
     border-top: 2px solid rgb(229, 229, 229);
-    padding: 25px 72px 0px;
+    padding: 23px 72px 35px;
 
 }
-
+.item .btn{
+    margin-left: 4px;
+}
 .searchedResults .item:last-child {
     border-bottom: 2px solid #e5e5e5;
+    margin-bottom: 25px;
 }
 
-/*hr{*/
-/*color: #e5e5e5;*/
-/*height: 2px;*/
-/*width: 1200px;*/
-/*}*/
 .item img {
-    display: inline-block;
     margin-right: 26px;
     width: 135px;
-    margin-top: 3px;
+    margin-top: 6px;
+    float: left;
 }
 
 .searchedHabitation {
-    position: relative;
-    width: 258px;
-    top: -99px;
-    left: 165px;
+    margin-left: 165px;
+    width: 780px;
 }
 
 .searchedHabitation a {
     margin: 0;
     padding: 0;
     letter-spacing: 0.3px;
+    display: block;
 }
 
 .searchedHabitation a:hover {
@@ -1270,12 +1172,13 @@ input[type="text"]:focus {
     padding: 0;
     margin: 0;
     text-decoration: none;
-    /*padding: 6px 16px;*/
 }
 
 .fittedHabitation {
     float: left;
     margin-right: 6px;
+    display: inline-block;
+    width: 110px;
 }
 
 .fittedHabitation a {
@@ -1291,7 +1194,7 @@ input[type="text"]:focus {
 
 .fittedHabitation a:active {
     background: #5496bd;
-    color: #cccccc; /*тут вообще-то opacity ffffff*/
+    color: #cccccc;
 
 }
 
@@ -1312,19 +1215,13 @@ input[type="text"]:focus {
 }
 
 .itemBtn {
-    position: absolute;
-    bottom: 35px;
-    left: 238px;
-    display: inline-flex;
+    margin-top:20px;
+    width: 785px;
+    margin-left: 160px;
 }
 
 .itemDetails {
     margin-top: 8px;
-}
-
-.itemDetails.fittedPrice {
-    position: absolute;
-    left: 115px;
 }
 
 footer .hotelsFooter {
@@ -1339,30 +1236,3 @@ footer .hotelsFooter {
     vertical-align: middle;
 }
 
-/*.fittedHabitation .btn {
-    width: 110px;
-}*/
-
-/*.fittedPrice .btn {
-    width: 142px;
-}*/
-
-.gl0 {
-    outline: solid;
-    outline-color: aqua;
-}
-
-.gl1 {
-    outline: solid;
-    outline-color: red;
-}
-
-.gl2 {
-    outline: solid;
-    outline-color: green;
-}
-
-.gl3 {
-    outline: solid;
-    outline-color: yellow;
-}
