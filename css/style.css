@@ -523,13 +523,14 @@ figure .advantages {
     bottom: -231px;
 }
 .map iframe{
-    display:none;
+    position: absolute;
+    left: -2000px;
 }
 .staticMapHidden{
     display: none;
 }
 .frameShow{
-    display: block;
+    position: static;
 }
 .form input {
     border: 0;
