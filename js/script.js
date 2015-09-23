@@ -8,6 +8,7 @@ var popup = document.querySelector(".formContent");
 
 var form = popup.querySelector("form");
 var arrivalDay = popup.querySelector("[name='arrivalDay']");
+var departureDay = popup.querySelector("[name='departureDay']");
 var formStatus =false;
 var map = document.querySelector(".staticMap");
 
@@ -31,7 +32,7 @@ link.addEventListener("click", function(event) {
 });
 
 form.addEventListener("submit", function(event) {
-    if (!(login.value && password.value)) {
+    if (!(arrivalDay.value && departureDay.value)) {
         event.preventDefault();
     } else {
         localStorage.setItem("arrivalDay", arrivalDay.value);
