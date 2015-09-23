@@ -11,11 +11,10 @@ var arrivalDay = popup.querySelector("[name='arrivalDay']");
 var departureDay = popup.querySelector("[name='departureDay']");
 var formStatus =false;
 var map = document.querySelector(".staticMap");
-
-var iframe = document.querySelector(".map");
-
 map.classList.add("staticMapHidden");
-iframe.classList.add("iframeShow");
+
+var intFrame = document.querySelector(".frame");
+intFrame.classList.add("frameShow");
 
 link.addEventListener("click", function(event) {
     event.preventDefault();
