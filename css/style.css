@@ -522,6 +522,9 @@ figure .advantages {
     height: 593px;
     bottom: -231px;
 }
+.map iframe{
+    display: none;
+}
 .staticMapHidden{
     display: none;
 }
