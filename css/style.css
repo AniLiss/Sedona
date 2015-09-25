@@ -608,7 +608,7 @@ iframe{
 }
 
 .adults input {
-    margin-left: 40px;
+    margin-left: 38px;
 }
 
 .shortLine input {
@@ -708,14 +708,46 @@ iframe{
 }
 .formContentShow{
     display: block;
+    -webkit-animation: bounce 0.6s;
+    animation: bounce 0.6s;
 }
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 footer {
     position: relative;
     min-width: 1200px;
 }
 
 .footerRow {
-    /*position: absolute;*/
     bottom: 0;
     height: 120px;
     position: absolute;
@@ -748,7 +780,6 @@ footer {
     color: white;
     font-size: 19px;
     position: absolute;
-    /* padding-bottom: 36px;*/
 }
 
 .footerSocial .icon-twitter {
@@ -842,7 +873,7 @@ footer {
 
 .bgMain {
     position: relative;
-    background-image: url("../img/bg_main.png"); /*не получается*/
+    background-image: url("../img/bg_main.png");
     background-repeat: no-repeat;
     background-color: #5D6380;
 }
@@ -968,14 +999,13 @@ label .disabled {
 .priceFilter{
     padding-left: 65px;
 }
-.priceFilterFrame label:first-child{ /* #from input:nth-child(1)*/
+.priceFilterFrame label:first-child{
     margin-right: 58px;
     margin-left: 65px;
     vertical-align: top;
 }
 
-.priceFilterFrame label:last-child /*#tillinput:nth-child(2)*/
-{
+.priceFilterFrame label:last-child{
     margin-right: 0px;
     width: 100px;
     margin-left: 2px;
@@ -1253,4 +1283,3 @@ footer .hotelsFooter {
     margin-top: 51px;
     vertical-align: middle;
 }
-
