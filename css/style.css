@@ -384,9 +384,7 @@ header .logoMenu img {
 
 .advantages .advantagesContent {
     width: 265px;
-    position: absolute;
-    left: 68px;
-    top: 52px;
+    margin-left: 68px;
 }
 
 .advantagesContent h2 {
@@ -407,8 +405,7 @@ header .logoMenu img {
 
 .photoRibbonLeft .advantagesContent {
     width: 215px;
-    left: 93px;
-    top: 53px;
+    margin-left: 94px;
 }
 
 .photoRibbonLeft {
@@ -475,6 +472,7 @@ figure .advantages {
     text-align: center;
     display: inline-block;
     letter-spacing: 0.3px;
+    vertical-align: baseline;
 }
 
 .advantageRibbon .advantages {
@@ -522,7 +520,7 @@ figure .advantages {
     height: 593px;
     bottom: -231px;
 }
- iframe{
+iframe{
     position: absolute;
     left: -2000px;
 }
@@ -550,7 +548,15 @@ figure .advantages {
     border: solid 2px #e5e5e5;
     height: 34px;
 }
-
+.longLine input:focus{
+    width: 295px;
+}
+.shortLine input:focus{
+    width: 48px;
+}
+.children input:focus{
+    width: 51px;
+}
 .searchHotelBtn h2 {
     padding-top: 29px;
     text-align: center;
@@ -578,6 +584,7 @@ figure .advantages {
     margin-top: 12px;
     left: 3px;
     letter-spacing: 0.5px;
+    vertical-align: baseline;
 }
 
 .longLine input {
@@ -605,7 +612,7 @@ figure .advantages {
 }
 
 .shortLine input {
-    width: 54px;
+    width: 55px;
     padding: 0 30px;
 }
 
@@ -765,6 +772,7 @@ footer {
     height: 48px;
     width: 46px;
     background-color: #81b3d2;
+    vertical-align: baseline;
 }
 
 .footerSocial .socialBtnTw {
@@ -777,18 +785,19 @@ footer {
 }
 
 .footerCopyright {
-    width: 195px;
+    width: 200px;
     float: right;
-    margin-right: 21px;
+    margin-right: 97px;
+    display: block;
 }
 
 .footerCopyright .iconHtmlAcademySprite {
-    display: block;
     margin-top: 41px;
     width: 113px;
     height: 39px;
     background-image: url("../img/icon_html_academy.png");
     background-repeat: no-repeat;
+    display: inline-block;;
 }
 
 .footerCopyright .iconHtmlAcademySprite:hover {
@@ -800,10 +809,11 @@ footer {
 }
 
 .footerCopyright span {
-    position: absolute;
+    display: inline-block;
+    margin-right: 4px;
     right: 225px;
-    margin-top: 50px;
     vertical-align: middle;
+    margin-bottom: 35px;
 }
 
 .footerSocial a:hover {
@@ -947,29 +957,29 @@ label .disabled {
     color: #ffffff;
     font-size: 14px;
     font-family: "PT Sans", "Arial", sant-serif;
+    margin-left: 2px;
 }
 
 .priceFilter label {
     display: inline-block;
     margin-top: 7px;
+    vertical-align: baseline;
 }
-
-.priceFilter label:first-child {
+.priceFilter{
     padding-left: 65px;
-
+}
+.priceFilterFrame label:first-child{ /* #from input:nth-child(1)*/
+    margin-right: 58px;
+    margin-left: 65px;
+    vertical-align: top;
 }
 
-.priceFilter #from /* input:nth-child(1)*/
+.priceFilterFrame label:last-child /*#tillinput:nth-child(2)*/
 {
-    margin-right: 56px;
+    margin-right: 0px;
+    width: 100px;
     margin-left: 2px;
-}
-
-.priceFilter #till /*input:nth-child(2)*/
-{
-    margin-right: 0;
-    width: 65px;
-    margin-left: 2px;
+    vertical-align: top;
 }
 
 .delimiter {
@@ -1046,6 +1056,7 @@ input[type="text"]:focus {
     margin-right: 42px;
     position: relative;
     top: 3px;
+    vertical-align: baseline;
 }
 
 .sort {
