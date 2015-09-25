@@ -439,7 +439,7 @@ header .logoMenu img {
     width: 75px;
     height: 76px;
     vertical-align: middle;
-    background-image: url("../img/spriteHouseFoodSouvenire.png");
+    background-image: url("../img/sprite_house_food_souvenire.png");
     background-repeat: no-repeat;
 }
 
@@ -787,7 +787,7 @@ footer {
     margin-top: 41px;
     width: 113px;
     height: 39px;
-    background-image: url("../img/iconHtmlAcademy.png");
+    background-image: url("../img/icon_html_academy.png");
     background-repeat: no-repeat;
 }
 
@@ -824,7 +824,7 @@ footer {
 .filter {
     position: relative;
     top: 6px;
-    background-image: url("../img/bgMain.png");
+    background-image: url("../img/bg_main.png");
 
     overflow: hidden;
     padding-bottom: 7px;
@@ -832,7 +832,7 @@ footer {
 
 .bgMain {
     position: relative;
-    background-image: url("../img/bgMain.png"); /*не получается*/
+    background-image: url("../img/bg_main.png"); /*не получается*/
     background-repeat: no-repeat;
     background-color: #5D6380;
 }

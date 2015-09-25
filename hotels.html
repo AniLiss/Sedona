@@ -7,17 +7,16 @@
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700subset=latin,cyrillic' rel='stylesheet'
           type='text/css'>
     <link href="css/normalise.min.css" rel="stylesheet"/>
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-    <a class="logoMenu" href="#"><img src="img/iconCityOfSedonaLogo.png" width="138" height="70" alt=""></a>
+    <a class="logoMenu" href="#"><img src="img/icon_city_of_sedona_logo.png" width="138" height="70" alt=""></a>
 
     <div class="container clearfix">
         <nav class="mainNavigation">
-
             <ul>
                 <li>
                     <a href="#">Информация</a>
@@ -34,11 +33,9 @@
             </ul>
         </nav>
 
-
         <div class="filter  clearfix">
             <div class="bgMain"><!----></div>
             <form action="/echo" method="post">
-
                 <div class="infrastructureFilter">
                     <h3 class="searchCriteria">Инфраструктура:</h3>
                     <label for="pool">
@@ -50,7 +47,7 @@
                         <span>Парковка</span>
                     </label>
                     <label for="wiFi">
-                        <input type="checkbox"  id="wiFi">
+                        <input type="checkbox" id="wiFi">
                         <span>Wi-Fi</span>
                     </label>
                 </div>
@@ -75,14 +72,12 @@
                     <h3 class="searchCriteria">Стоимость в сутки (р):</h3>
 
                     <div class="priceFilterFrame">
-                        <label for="from">От<input type="text" id="from" placeholder="0"></label>
-                        <span class="delimiter"></span>
-                        <label for="till">До<input type="text" id="till" placeholder="3000"></label>
+                        <label for="from">От<input type="text" id="from" placeholder="0"></label><!--
+                        --><span class="delimiter"></span><!--
+                        --><label for="till">До<input type="text" id="till" placeholder="3000"></label>
                     </div>
 
-
                     <div class="priceFilterScrollBox">
-
                         <div class="greyLine">
                             <div style="width: 80%" class="whiteLine"></div>
                         </div>
@@ -92,7 +87,6 @@
                 </div>
 
                 <button type="submit" id="show">Показать</button>
-
             </form>
         </div>
     </div>
@@ -101,7 +95,6 @@
 <div class="container">
 
     <div class="searchNavigation clearfix">
-
         <div class="searchedItems clearfix">
 
             <div class="upDown">
@@ -121,8 +114,6 @@
 
                 <a href="#">по рейтингу</a>
             </div>
-
-
         </div>
 
         <div class="searchedResults clearfix">
@@ -135,21 +126,18 @@
                     </div>
                 </div>
 
-                <img src="pic/picAmaraResortSpa.jpg" width="135" height="90" alt="">
+                <img src="pic/pic_amara_resort_spa.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation">
-
                     <a href="#" class="caption">Amara Resort & Spa</a>
-
-
                     <div class="itemDetails fittedHabitation">
                         <span>Гостиница</span>
-
                     </div>
                     <div class="itemDetails fittedPrice">
                         От <span>3500 </span>р.
                     </div>
                 </article>
+
                 <div class="itemBtn">
                     <div class="fittedHabitation">
                         <a href="#" class="btn">Подробнее</a>
@@ -166,7 +154,7 @@
                     <div class="scale">Рейтинг: <span>8,9</span>
                     </div>
                 </div>
-                <img src="pic/picDesertQuailInn.jpg" width="135" height="90" alt="">
+                <img src="pic/pic_desert_quail_inn.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation">
                     <div>
@@ -174,13 +162,12 @@
                     </div>
                     <div class="itemDetails fittedHabitation">
                         <span>Мотель</span>
-
                     </div>
                     <div class="itemDetails fittedPrice">
                         От <span>2000 </span>р.
-
                     </div>
                 </article>
+
                 <div class="itemBtn">
                     <div class="fittedHabitation">
                         <a href="#" class="btn">Подробнее</a>
@@ -197,18 +184,15 @@
                     <div class="scale">Рейтинг: <span>9,2</span>
                     </div>
                 </div>
-                <img src="pic/picVillasAtPocoDiablo.jpg" width="135" height="90" alt="">
+                <img src="pic/pic_villas_at_poco_diablo.jpg" width="135" height="90" alt="">
 
                 <article class="searchedHabitation">
                     <a href="#" class="caption">Villas At Poco Diablo</a>
-
                     <div class="itemDetails fittedHabitation">
                         <span>Апартаменты</span>
-
                     </div>
                     <div class=" itemDetails fittedPrice">
                         От <span>4000 </span>р.
-
                     </div>
                 </article>
 
@@ -220,9 +204,7 @@
                         <a href="#" class="btn">Забронировать</a>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 </div>
@@ -235,9 +217,9 @@
             </div>
 
             <div class="footerCopyright">
-                <div class="hotelsfooterCopyright">
-                    <span>Website by</span>
-                </div>
+                <!--<div class="hotelsfooterCopyright">-->
+                <span>Website by</span>
+                <!--</div>-->
                 <a href="#">
                     <div class="iconHtmlAcademySprite"></div>
                 </a>
