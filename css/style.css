@@ -559,7 +559,9 @@ iframe {
 }
 
 .longLine input:focus {
-    width: 295px;
+    width: 296px;
+    padding-left: 12px;
+    padding-right: 34px;
 }
 
 .shortLine input:focus {
@@ -603,8 +605,8 @@ iframe {
 .longLine input {
     width: 299px;
     float: right;
-    padding-left: 8px;
-    padding-right: 39px;
+    padding-left: 14px;
+    padding-right: 33px;
 }
 
 .formLine .adults {
