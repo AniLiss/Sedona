@@ -11,6 +11,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
     font-family: "symbols-sedona";
     font-style: normal;
@@ -216,6 +217,7 @@ body a {
 .active a:active {
     color: #dbd8d5;
 }
+
 /*======================================
  positioning elements index
 =======================================*/
@@ -314,14 +316,17 @@ header .logoMenu img {
     overflow: hidden;
     background-color: #E1F0F7;
 }
-.imgWelcomeToSedona{
+
+.imgWelcomeToSedona {
     display: block;
     position: relative;
 }
-.imgWelcomeToSedona img{
+
+.imgWelcomeToSedona img {
     position: absolute;
-    top:-57px;
+    top: -57px;
 }
+
 .welcomeToSedona img:nth-child(2) {
     position: absolute;
     top: 76px;
@@ -520,16 +525,20 @@ figure .advantages {
     height: 593px;
     bottom: -231px;
 }
-iframe{
+
+iframe {
     position: absolute;
     left: -2000px;
 }
-.staticMapHidden{
+
+.staticMapHidden {
     display: none;
 }
-.frameShow{
+
+.frameShow {
     position: static;
 }
+
 .form input {
     border: 0;
     background-color: #f2f2f2;
@@ -548,15 +557,19 @@ iframe{
     border: solid 2px #e5e5e5;
     height: 34px;
 }
-.longLine input:focus{
+
+.longLine input:focus {
     width: 295px;
 }
-.shortLine input:focus{
+
+.shortLine input:focus {
     width: 48px;
 }
-.children input:focus{
+
+.children input:focus {
     width: 51px;
 }
+
 .searchHotelBtn h2 {
     padding-top: 29px;
     text-align: center;
@@ -706,7 +719,8 @@ iframe{
     cursor: default;
     display: none;
 }
-.formContentShow{
+
+.formContentShow {
     display: block;
     -webkit-animation: bounce 0.6s;
     animation: bounce 0.6s;
@@ -940,13 +954,8 @@ input[type="checkbox"] + span:before {
     left: 0;
 }
 
-input[type="checkbox"]:hover + span:before {
-    color: #ffffff;
-}
-
-input[type="checkbox"]:disabled + span:before {
-    color: #6a6a6a;
-    cursor: default;
+label:hover span::before {
+    color: #fefefe;
 }
 
 label .disabled {
@@ -954,8 +963,9 @@ label .disabled {
     cursor: default;
 }
 
-.filter label:hover {
-    color: #fefefe;
+input[type="checkbox"]:disabled + span:before {
+    color: #6a6a6a;
+    cursor: default;
 }
 
 .priceFilter {
@@ -996,16 +1006,18 @@ label .disabled {
     margin-top: 7px;
     vertical-align: baseline;
 }
-.priceFilter{
+
+.priceFilter {
     padding-left: 65px;
 }
-.priceFilterFrame label:first-child{
+
+.priceFilterFrame label:first-child {
     margin-right: 58px;
     margin-left: 65px;
     vertical-align: top;
 }
 
-.priceFilterFrame label:last-child{
+.priceFilterFrame label:last-child {
     margin-right: 0px;
     width: 100px;
     margin-left: 2px;
@@ -1181,9 +1193,11 @@ input[type="text"]:focus {
     padding: 23px 72px 35px;
 
 }
-.item .btn{
+
+.item .btn {
     margin-left: 4px;
 }
+
 .searchedResults .item:last-child {
     border-bottom: 2px solid #e5e5e5;
     margin-bottom: 25px;
@@ -1263,7 +1277,7 @@ input[type="text"]:focus {
 }
 
 .itemBtn {
-    margin-top:20px;
+    margin-top: 20px;
     width: 785px;
     margin-left: 160px;
 }
