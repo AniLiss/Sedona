@@ -559,9 +559,9 @@ iframe {
 }
 
 .longLine input:focus {
-    width: 296px;
-    padding-left: 12px;
-    padding-right: 34px;
+    width: 295px;
+    padding-left: 11px;
+    padding-right: 33px;
 }
 
 .shortLine input:focus {
@@ -603,16 +603,17 @@ iframe {
 }
 
 .longLine input {
-    width: 299px;
+    width: 298px;
     float: right;
-    padding-left: 14px;
-    padding-right: 33px;
+    padding-left: 13px;
+    padding-right: 32px;
 }
 
 .formLine .adults {
     position: relative;
     left: -4px;
     top: 1px;
+    margin-right: 35px;
 }
 
 .formLine .children {
@@ -620,6 +621,7 @@ iframe {
     position: relative;
     top: 1px;
     left: 2px;
+    margin-left: 10px;
 }
 
 .adults input {
@@ -1096,8 +1098,8 @@ input[type="text"]:focus {
 
 .hasFound {
     display: inline-block;
-    width: 117px;
-    margin-right: 42px;
+    width: 135px;
+    margin-right: 24px;
     position: relative;
     top: 3px;
     vertical-align: baseline;
